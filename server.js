@@ -10,7 +10,7 @@ app.get('/api/beerPair', function (request, respond) { //requesting and respondi
 var server = app.listen(3000, function () { 
 	var host = server.address().address;//configures the server - the ip address
 	var port = server.address().port;
-	// console.log('Example app listening at http://%s:%s', host, port);
+	console.log('Example app listening at http://%s:%s', host, port);
  });
 
 app.use(express.static(__dirname + '/public'));
