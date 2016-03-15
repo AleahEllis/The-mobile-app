@@ -4,7 +4,8 @@ angular.module('CiulApp', ['facebook'])
     'FacebookProvider',
     function(FacebookProvider) {
      var myAppId = '997377097020840';
-     FacebookProvider.init(myAppId);    
+     FacebookProvider.init(myAppId);
+     
     }
   ])
   
@@ -12,7 +13,8 @@ angular.module('CiulApp', ['facebook'])
     '$scope',
     '$timeout',
     'Facebook',
-    function($scope, $timeout, Facebook) {      
+    function($scope, $timeout, Facebook) {
+
       $scope.user = {};
       $scope.logged = false;
       $scope.byebye = false;
@@ -34,12 +36,13 @@ angular.module('CiulApp', ['facebook'])
           userIsConnected = true;
         }
       });
-
+      
       $scope.IntentLogin = function() {
         if(!userIsConnected) {
           $scope.login();
         }
       };
+      
 
        $scope.login = function() {
          Facebook.login(function(response) {
@@ -50,6 +53,7 @@ angular.module('CiulApp', ['facebook'])
         
         });
        };
+       
 
         $scope.me = function() {
           Facebook.api('/me', function(response) {
@@ -59,7 +63,8 @@ angular.module('CiulApp', ['facebook'])
             
           });
         };
-    
+      
+
       $scope.logout = function() {
         Facebook.logout(function() {
           $scope.$apply(function() {
@@ -81,6 +86,8 @@ angular.module('CiulApp', ['facebook'])
           $scope.$apply(function() {
             $scope.salutation = false;
             $scope.byebye     = true;
+            
+
             $timeout(function() {
               $scope.byebye = false;
             }, 2000)
@@ -96,18 +103,19 @@ angular.module('CiulApp', ['facebook'])
   
 
   .directive('debug', function() {
-		return {
-			restrict:	'E',
-			scope: {
-				expression: '=val'
-			},
-			template:	'<pre>{{debug(expression)}}</pre>',
-			link:	function(scope) {
-				scope.debug = function(exp) {
-					return angular.toJson(exp, true);
-				};
-			}
-		}
-	})
+    return {
+      restrict: 'E',
+      scope: {
+        expression: '=val'
+      },
+      template: '<pre>{{debug(expression)}}</pre>',
+      link: function(scope) {
+        scope.debug = function(exp) {
+          return angular.toJson(exp, true);
+        };
+      }
+    }
+  })
   
   ;
+
