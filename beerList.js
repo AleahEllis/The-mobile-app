@@ -12,7 +12,7 @@ var beerArray=[ //aide from name description and maker we could include alchohle
 	},
 	
 	{
-		Name:"Decandent Dark Chocolate",
+		Name:"Decadent Dark Chocolate",
 		Description:"Nutty, round mouthfeel with an a blend of chocolate extract added for a rich, not-too-sweet mellow flavor profile",
 		Maker:"Atwater"
 	},

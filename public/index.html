@@ -15,19 +15,21 @@
 
 	<!-- dropdown menus to appear sitewide -->
 	<div ng-controller="dropdownController as menu" class="dropdowns">
-		
+
 		<!-- dropdown for breweries -->
-		<select ng-model="brews1" 
-		        ng-options="brewery as brewery.Brewery for brewery in menu.beersByBrewery" 
-		        ng-class="'brewMenu'">
-			<option value="">Choose a brewery</option>
+		<select ng-model="dropdown1" 
+		        ng-options="brewery.Brewery for brewery in menu.beersByBrewery" 
+		        ng-class="'brewMenu'"
+		        >
+			<option value="">Choose your brewery ...</option>
 		</select>
 
 		<!-- dropdown for beers -->
-		<select ng-model="brews2" 
+		<select ng-model="dropdown2"
+		        ng-options="beer for beer in dropdown1.Beers"
 			    ng-class="'brewMenu'">
-			<option ng-repeat="beer in menu.beersByBrewery[0].Beers" ng-bind="beer"></option>
-		</select>	
+			<option value="">Then choose your beer ...</option>
+		</select>
 
 	</div>
 
