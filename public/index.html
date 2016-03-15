@@ -2,26 +2,42 @@
 <html lang="en">
 <head>
 	<!-- Stylesheet compiled with Stylus -->
-	<link rel="stylesheet" href="lookinggood/beer.css">
+	<link rel="stylesheet" href="lookingood/beer.css">
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
 <body ng-app="beerApp">
 
-		<a href="#/">Pick a Brew!</a>|
-	    <a href="#/beerList">All The Beer!</a>|
-	    <a href="#/localBrews">Detroit Breweries</a>
-	    <a href="#/about">About the App</a>
-	
+	<a href="#/">Pick a Brew!</a>|
+    <a href="#/beerList">All The Beer!</a>|
+    <a href="#/localBrews">Detroit Breweries</a>
+    <a href="#/about">About the App</a>
 
+	<!-- Dropdown menu for selecting brewery, beer -->
+	<div ng-controller="breweryMenu as menu" class="menu">
+		
+		<select ng-model="selected_brewery" 
+		        ng-options="brewery.Brewery for brewery in breweries" 
+		        ng-class="'brewMenu'">
+			<option value="" ng-class="'dropdown'" class="blah">Choose a brewery</option>
+		</select>
+
+		<select ng-model="selected_beer" 
+			    ng-options="brewery.Beers for beer in breweries" 
+			    ng-class="'brewMenu'">
+			<option value="">Choose a beer</option>
+		</select>		
+
+	</div>
 
 
 
 
 	<!-- Angular, Angular Route libraries -->
-	<script src="libs/angular.min.js"></script>
-	<script src="libs/angular-route.min.js"></script>
+	<script src="scripts/libs/angular.min.js"></script>
+	<script src="scripts/libs/angular-route.min.js"></script>
 	<!-- Local JavaScript file -->
+	<script src="scripts/menuController.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
