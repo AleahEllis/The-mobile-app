@@ -9,7 +9,7 @@ angular.module('beerApp', ['facebook'])
     }
   ])
   
-  .controller('MainController', [
+  .controller('FBController', [
     '$scope',
     '$timeout',
     'Facebook',
