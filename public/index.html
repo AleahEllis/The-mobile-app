@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<!-- Stylesheet compiled with Stylus -->
-	<link rel="stylesheet" href="lookingood/beer.css">
+	<link rel="stylesheet" href="styles/beer.css">
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
@@ -33,12 +33,16 @@
 
 	</div>
 
-
 	<!-- Angular, Angular Route libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
 	<script src="scripts/libs/angular-route.min.js"></script>
-	<!-- Local JavaScript file -->
-	<script src="scripts/dropdownController.js"></script>
-	<script src="app.js"></script>
+	<!-- services -->
+	<script src="scripts/services/facebookService.js"></script>
+	<script src="scripts/services/beerlistService"></script>
+	<!-- controllers -->
+	<script src="scripts/controllers/beerlistController.js"></script>
+	<script src="scripts/controllers/dropdownController.js"></script>
+	<!-- router -->
+	<script src="scripts/routes.js"></script>
 </body>
 </html>
