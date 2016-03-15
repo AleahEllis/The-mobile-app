@@ -1,4 +1,4 @@
-angular.module('CiulApp', ['facebook'])
+angular.module('beerApp', ['facebook'])
 
   .config([
     'FacebookProvider',
