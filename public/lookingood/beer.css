@@ -1,3 +1,4 @@
+/* general page stylings */
 * {
   margin: 0;
 }
@@ -14,27 +15,22 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
 }
-.menu {
+/* dropdown menus */
+.dropdowns {
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
 }
 .brewMenu {
-  color: #00f;
-  background-color: #ffa500;
-  padding: 10px;
+  color: #fff;
+  font-size: 19px;
+  background-color: #b48c2d;
   width: 48%;
   height: 40px;
-  border: none;
-  border-radius: none;
+  border: 0px;
   font-family: Verdana;
 }
-.blah {
-  color: #00f;
-  background-color: #f00;
-  padding: 10px;
-  width: 48%;
-  height: 40px;
-  border: none;
-  border-radius: none;
+.brewMenu:hover {
+  cursor: pointer;
+  background-color: rgba(180,140,45,0.8);
 }

@@ -13,31 +13,30 @@
     <a href="#/localBrews">Detroit Breweries</a>
     <a href="#/about">About the App</a>
 
-	<!-- Dropdown menu for selecting brewery, beer -->
-	<div ng-controller="breweryMenu as menu" class="menu">
+	<!-- dropdown menus to appear sitewide -->
+	<div ng-controller="dropdownController as menu" class="dropdowns">
 		
-		<select ng-model="selected_brewery" 
-		        ng-options="brewery.Brewery for brewery in breweries" 
+		<!-- dropdown for breweries -->
+		<select ng-model="brews1" 
+		        ng-options="brewery as brewery.Brewery for brewery in menu.beersByBrewery" 
 		        ng-class="'brewMenu'">
-			<option value="" ng-class="'dropdown'" class="blah">Choose a brewery</option>
+			<option value="">Choose a brewery</option>
 		</select>
 
-		<select ng-model="selected_beer" 
-			    ng-options="brewery.Beers for beer in breweries" 
+		<!-- dropdown for beers -->
+		<select ng-model="brews2" 
 			    ng-class="'brewMenu'">
-			<option value="">Choose a beer</option>
-		</select>		
+			<option ng-repeat="beer in menu.beersByBrewery[0].Beers" ng-bind="beer"></option>
+		</select>	
 
 	</div>
-
-
 
 
 	<!-- Angular, Angular Route libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
 	<script src="scripts/libs/angular-route.min.js"></script>
 	<!-- Local JavaScript file -->
-	<script src="scripts/menuController.js"></script>
+	<script src="scripts/dropdownController.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
