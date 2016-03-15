@@ -1,4 +1,4 @@
-angular.module('beerApp', [])
+angular.module('beerApp')
 .controller('dropdownController', function() {
 	
 	var menu = this;

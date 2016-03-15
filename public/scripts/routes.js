@@ -1,22 +1,13 @@
-app.config(function($routeProvider) {
+angular.module('beerApp', ['ngRoute'])
+.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/views/beerRec.html',
-      controller: ''
+      templateUrl: 'views/landingPage.html',
+      controller: 'landingPageController'
     })
-    .when('/about', {
-      templateUrl: '/views/about.html',
-      controller: ''
+    .when('/views/pairing', {
+      templateUrl: 'views/pairing.html',
+      controller: 'pairingController'
     })
-    .when('/beerList', {
-      templateUrl: '/views/beerList.html',
-      controller: ''
-    })
-    .when('/localBrews', {
-      templateUrl: '/views/localBrews.html',
-      controller: ''
-    })
-    .otherwise({ 
-      redirectTo: '/'
-    });
+    .otherwise({ redirectTo: '/' });
 });

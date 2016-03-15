@@ -8,11 +8,6 @@
 </head>
 <body ng-app="beerApp">
 
-	<a href="#/">Pick a Brew!</a>|
-    <a href="#/beerList">All The Beer!</a>|
-    <a href="#/localBrews">Detroit Breweries</a>
-    <a href="#/about">About the App</a>
-
 	<!-- dropdown menus to appear sitewide -->
 	<div ng-controller="dropdownController as menu" class="dropdowns">
 
@@ -33,16 +28,37 @@
 
 	</div>
 
+
+	<!-- view for partials -->
+
+	<br />
+	<a href="#/">Home</a>
+    <a href="#/views/pairing">Pairings</a>
+
+	<ng-view></ng-view>
+
 	<!-- Angular, Angular Route libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
 	<script src="scripts/libs/angular-route.min.js"></script>
-	<!-- services -->
-	<script src="scripts/services/facebookService.js"></script>
-	<script src="scripts/services/beerlistService"></script>
-	<!-- controllers -->
-	<script src="scripts/controllers/beerlistController.js"></script>
-	<script src="scripts/controllers/dropdownController.js"></script>
 	<!-- router -->
 	<script src="scripts/routes.js"></script>
+
+	<!-- services -->
+<!--
+	<script src="scripts/services/facebookService.js"></script>
+	<script src="scripts/services/beerlistService"></script>
+-->
+	<!-- partial view services -->
+	<script src="scripts/services/landingPageService.js"></script>
+	<script src="scripts/services/pairingService.js"></script>	
+	<!-- controllers -->
+<!--
+	<script src="scripts/controllers/beerlistController.js"></script>
+-->
+
+	<script src="scripts/controllers/dropdownController.js"></script>
+	<!-- partial view controllers -->
+	<script src="scripts/controllers/landingPageController.js"></script>
+	<script src="scripts/controllers/pairingController.js"></script>		
 </body>
 </html>
