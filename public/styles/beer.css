@@ -2,17 +2,21 @@
 * {
   margin: 0;
 }
-img {
-  max-width: 30%;
-  display: inline-block;
-}
 body {
-  margin-top: 20px;
   font-family: Verdana;
-  padding: 50px;
+}
+/* header */
+.header {
+  width: 100%;
+  background-color: #b48c2d;
+  padding: 20px 0px;
 }
 h1 {
-  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+a {
   text-align: center;
 }
 /* dropdown menus */
