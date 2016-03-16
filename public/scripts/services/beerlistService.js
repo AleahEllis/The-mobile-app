@@ -1,4 +1,6 @@
-angular.module('beerApp',[])
+
+angular.module('beerApp')
+
 .factory('beerListSevice', function($){
 	return {
 
