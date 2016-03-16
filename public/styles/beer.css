@@ -4,12 +4,17 @@
 }
 body {
   font-family: Verdana;
+  background-color: #b48c2d;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* header */
 .header {
   width: 100%;
-  background-color: #b48c2d;
+  background-color: #907024;
   padding: 20px 0px;
 }
 h1 {
@@ -22,20 +27,34 @@ a {
 }
 /* dropdown menus */
 .dropdowns {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px 0px;
 }
 .brewMenu {
-  color: #fff;
+  color: #000;
   font-size: 19px;
-  background-color: #b48c2d;
-  width: 48%;
+  background-color: #eedfbb;
+  width: 49%;
   height: 40px;
   border: 0px;
   font-family: Verdana;
 }
+#beerDropdown {
+  float: right;
+}
 .brewMenu:hover {
   cursor: pointer;
-  background-color: rgba(180,140,45,0.8);
+  background-color: #e3c98d;
+}
+/* styles for partial view */
+.views {
+  background-color: #d1a949;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* beer info view */
+#beerInfo p {
+  line-height: 1.7em;
+}
+#beerInfo span {
+  font-weight: bold;
 }
