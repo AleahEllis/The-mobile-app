@@ -1,6 +1,9 @@
 angular.module('beerApp',[])
 .factory('beerListSevice', function($){
 	return {
+
+		bre
+
 		atwater: [
 			{
 		 		Name:"Dirty Blonde",
