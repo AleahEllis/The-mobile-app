@@ -31,10 +31,13 @@
 		</select>
 
 	</div>
+    
     <!-- template view probably? -->
-    <div ng-controller="recipieController">
+    <div ng-controller="recipeController">
         <ul ng-repeat="result in results">
-    <li>{result.title}</li></ul></div>
+            <li>{result}</li>
+        </ul>
+    </div>
 
 
 	<!-- view for partials -->
