@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+angular.module('beerApp')
+=======
 angular.module('beerApp',[])
+>>>>>>> 8fff649729071dbf937c6157adb48a94586d370f
 .factory('beerListSevice', function($){
 	return {
 

@@ -1,15 +1,16 @@
-angular.module('beerApp', ['facebook'])
+//angular.module('beerApp', ['facebook'])
+//
+//.config(['FacebookProvider', function(FacebookProvider) {
+//   var myAppId = '997377097020840';
+//   FacebookProvider.init(myAppId);
+//}]);
+//  
+//app.controller('FBController', [
+//    '$scope',
+//    '$timeout',
+//    'Facebook',
+//    function($scope, $timeout, Facebook){
 
-.config(['FacebookProvider', function(FacebookProvider) {
-   var myAppId = '997377097020840';
-   FacebookProvider.init(myAppId);
-}]);
-  
-.controller('FBController', [
-    '$scope',
-    '$timeout',
-    'Facebook',
-    function($scope, $timeout, Facebook) {
 
 //       $scope.user = {};
 //       $scope.logged = false;
@@ -111,4 +112,4 @@ angular.module('beerApp', ['facebook'])
 //         };
 //       }
 //     }
-// });
+

@@ -1,20 +1,18 @@
+
 angular.module('beerApp', []);
 
 app.controller("recepieCtrl", function($scope, $http) {
-  $http.get('data/posts.json').
-    success(function(data, status, headers, config) {
-      $scope.posts = data;
-    })
-    .error(function(data, status, headers, config) {
-      // log error
-    });
+
+
+
+angular.module('beerApp')
+
+.controller('recipeController', function($scope, $location, $http){
+
+$http.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=<required>&number=3&ranking=1")
+.header("X-Mashape-Key", "Ae6oX6OgLBmsh87xZW56z2AdA3Z8p1IWFf2jsngj2S7si3ElSe")
+.header("Accept", "application/json")
+.end(function (result) {
+  console.log(result);
 });
 
-// in the html-probs the view
-// <body ng-app="beerApp">
-//   <div ng-controller="recepieCtrl">
-//     <ul ng-repeat="post in posts">
-//       <li>{{post.title}}</li>
-//     </ul>
-//   </div>
-// </body>
