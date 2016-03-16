@@ -223,11 +223,12 @@ angular.module('beerApp')
 		}		
 	}
 
-	return {
+	return { // data gets returned to pairingController
 		breweries: breweries,
 		atwater: atwater,
 		batch: batch,
 		choice2: choice2,		
-		selectBeer: selectBeer
+		selectBeer: selectBeer,
+		pair: pair
 	};
 });
