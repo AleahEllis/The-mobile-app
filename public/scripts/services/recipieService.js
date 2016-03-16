@@ -1,45 +1,20 @@
-http://food2fork.com/about/api
+//https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients
+angular.module('beerApp', [])
 
-angular.module('beerApp', []);
-
-.controller('recipieController', function($scope, $http){
-    $scope.$watch('search', function() {
-      fetch();
+.controller('recipieController', function($scope, $location, $http){
+//   unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients.json")
+//   .success(function(data, status, headers, config){
+//     $scope.post=data;
+//   });
+//       .error(function(data, status, headers, config){
+//         //  log error
+//       }); 
     });
 
-    $scope.search = "a view";
-
-    // search request
-    key: c149f9bfb783bcd836c5dde3bc12d679
-    q: flavor
-	sort: sort=r
-
-	// The response is json encoded
-	// count: Number of recipes in result (Max 30) WE WANT 3 ONLY
-	recipes: List of Recipe Parameters ->
-	image_url: URL of the image
-	source_url: Original Url of the recipe on the publishers site
-	f2f_url: Url of the recipe on Food2Fork.com
-	title: Title of the recipe
-	publisher: Name of the Publisher
-	publisher_url: Base url of the publisher
-	social_rank: The Social Ranking of the Recipe (As determined by our Ranking Algorithm)
-	page: The page number that is being returned (To keep track of concurrent requests)
-
-
-    function fetch(){
-      $http.get("http://food2fork.com/api/search" + $scope.search + "")
-      .then(function(response){ $scope.details = response.data; });
-
-      $http.get("" + $scope.search)
-      .then(function(response){ $scope.related = response.data; });
-    }
-
-    $scope.update = function(?){
-      $scope.search = ?.Title;
-    };
-
-    $scope.select = function(){
-      this.setSelectionRange(0, this.value.length);
-    }
-  });
+   // These code snippets use an open-source library.
+unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=<required>&number=3&ranking=1")
+.header("X-Mashape-Key", "Ae6oX6OgLBmsh87xZW56z2AdA3Z8p1IWFf2jsngj2S7si3ElSe")
+.header("Accept", "application/json")
+.end(function (result) {
+  console.log(result.status, result.headers, result.body);
+});
