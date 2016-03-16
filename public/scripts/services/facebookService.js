@@ -11,6 +11,7 @@
 //    'Facebook',
 //    function($scope, $timeout, Facebook){
 
+
 //       $scope.user = {};
 //       $scope.logged = false;
 //       $scope.byebye = false;
@@ -111,3 +112,4 @@
 //         };
 //       }
 //     }
+
