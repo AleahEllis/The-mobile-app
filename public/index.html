@@ -12,40 +12,44 @@
 		<h1>LOGO HERE!</h1>
 	</div>
 
-	<!-- dropdown menus to appear sitewide -->
-	<div ng-controller="pairingController" class="dropdowns">
-		<!-- dropdown for breweries -->
-		<select ng-model="thing1" 
-		        ng-options="brewery for brewery in breweries" 
-		        ng-class="'brewMenu'"
-		        ng-change="selectBeer(thing1)"
-		        >
-			<option value="">Choose your brewery ...</option>
-		</select>		
-		<!-- dropdown for beers -->
-		<select ng-model="thing2"
-		        ng-options="beer for beer in choice2"
-			    ng-class="'brewMenu'"
-			    >
-			<option value="">Then choose your beer ...</option>
-		</select>
+	<div class="container">
+		<!-- dropdown menus to appear sitewide -->
+		<div ng-controller="pairingController" class="dropdowns">
+			<!-- dropdown for breweries -->
+			<select ng-model="thing1" 
+			        ng-options="brewery for brewery in breweries" 
+			        ng-class="'brewMenu'"
+			        ng-change="selectBeer(thing1)"
+			        >
+				<option value="">Choose your brewery ...</option>
+			</select>		
+			<!-- dropdown for beers -->
+			<select ng-model="thing2"
+			        ng-options="beer for beer in choice2"
+				    ng-class="'brewMenu'"
+				    id="beerDropdown"
+				    >
+				<option value="">Then choose your beer ...</option>
+			</select>
+
+		</div>
+	    
+	    <!-- template view probably? -->
+	<!--     <div ng-controller="recipeController">
+	        <ul ng-repeat="result in results">
+	            <li>{result}</li>
+	        </ul>
+	    </div> -->
+
+
+		<!-- view for partials -->
+
+		<a href="#/">Home</a>
+	    <a href="#/views/pairing">Pairings</a>
+
+		<div ng-view="" class="views"></div>
 
 	</div>
-    
-    <!-- template view probably? -->
-<!--     <div ng-controller="recipeController">
-        <ul ng-repeat="result in results">
-            <li>{result}</li>
-        </ul>
-    </div> -->
-
-
-	<!-- view for partials -->
-
-	<a href="#/">Home</a>
-    <a href="#/views/pairing">Pairings</a>
-
-	<ng-view></ng-view>
 
 	<!-- Angular, Angular Route libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
