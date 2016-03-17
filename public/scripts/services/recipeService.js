@@ -1,23 +1,52 @@
-angular.module('beerApp')
-	.factory('spoonService', ['$http', function($http){
-		return{
-			get:function(){ //ajax(?) call to api
-				return $http.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=<required>&number=3&ranking=1");
+var app = angular.module('beerApp');
+
+app.factory('recipeService', ['$http', function($http){
+
+	var pushIngredients = function(ingredient){
+	return params.push(ingredients);
+	//How can I get the ingredients?
+	};
+	function getRecipes(){
+		var config = {
+			params:{
+				"ingredients": "grapefriut,rosemary,pepper" ,
+				"number": 3
 			},
-			create:function(recipeData){//call for recipeData
-				return $http.post("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=<required>&number=3&ranking=1", recipeData);
-			},
-			 delete: function(id){
-                return $http.delete("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=<required>&number=3&ranking=1"+id);
-            }
+			headers:{
+				"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
+			}
 		};
-	}]);
+		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients', config);
 
-	.controller('recipeController', function($scope, $location, $http){
-		$http.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=<required>&number=3&ranking=1")
-		.header("X-Mashape-Key", "Ae6oX6OgLBmsh87xZW56z2AdA3Z8p1IWFf2jsngj2S7si3ElSe")
-		.header("Accept", "application/json")
-		.end(function (result) {
-		  console.log(result);
-		});
 
+	};
+
+	// below is the function to get the links. Right now, it thinks
+	//randomRecipeID is "undefined" so that's what it's putting in the 
+	//returning URL. Issue is in the pairingController, it isn't 
+	//accepting $scope.randomRecipeID as an argument for the getLink function
+	//there. However, I can console.log the ID and it shows up.
+	
+	function getLink(randomRecipeID){
+		var configLink = {
+			headers:{
+				"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
+			}
+		};
+
+		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/'+randomRecipeID+'/information', configLink);
+	}
+
+
+	return {
+		getRecipes : getRecipes,
+		getLink : getLink
+	};
+
+
+
+
+
+
+}]);
+	

@@ -1,15 +1,20 @@
 <div id="beerInfo">
-	<p><span>Name:</span> {{atwater[2].Name}}</p>
+	<p><span>Name:</span> {{atwater[blah].Name}}</p>
 	<p><span>Brewery:</span> {{atwater[2].Brewery}}</p>
 	<p><span>Type:</span> {{atwater[2].Type}}</p>
 	<p><span>Description:</span> {{atwater[2].Description}}</p>
 	<p><span>Glass:</span> {{atwater[2].Glass}}</p>
 	<p><span>Temperature:</span> {{atwater[2].Temperature}}</p>
-	<p><span>Try these recipes with your beer:</span> Coming soon ...</p>
+	<p><span>Try this recipe with your beer:</span>
+	<h3>{{randomRecipe}}</h3>
+	<p>Don't like what you see? Refresh the page for a new recipe.</p>
 </div>
 
 <br />
 <br />
 <br />
 
+
 <p ng-repeat="things in atwater[0]">{{things}}</p>
+
+

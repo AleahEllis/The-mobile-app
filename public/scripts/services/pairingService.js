@@ -1,5 +1,5 @@
-angular.module('beerApp')
-.factory('pairingService', function() {
+var app = angular.module('beerApp')
+app.factory('pairingService', function() {
 
 	var breweries = [
 		'Atwater Brewery', 
@@ -247,12 +247,32 @@ angular.module('beerApp')
 		}		
 	}
 
+	var selectedBeer;
+	var sbIndex;
+
+	// grabs value of selected beer from dropdown
+
+	var usersBeerChoice = $('#beerDropdown').bind('change', function() {
+		selectedBeer = $(this).find('option:selected').text();
+		// return selectedBeer;
+		for (var i = 0; i < atwater.length; i++) {
+		  if (atwater[i].Name === selectedBeer) {
+		    sbIndex = i;
+		  }
+		}
+		console.log(atwater[sbIndex]);
+		return sbIndex;
+	});
+
+
 	return { // data gets returned to pairingController
 		breweries: breweries,
 		atwater: atwater,
 		batch: batch,
 		choice2: choice2,		
 		selectBeer: selectBeer,
-		pair: pair
+		selectedBeer: selectedBeer,
+		usersBeerChoice: usersBeerChoice,
+		sbIndex: sbIndex
 	};
 });
