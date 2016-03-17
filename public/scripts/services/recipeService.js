@@ -27,20 +27,20 @@ app.factory('recipeService', ['$http', function($http){
 	//accepting $scope.randomRecipeID as an argument for the getLink function
 	//there. However, I can console.log the ID and it shows up.
 	
-	function getLink(randomRecipeID){
-		var configLink = {
-			headers:{
-				"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
-			}
-		};
+	// function getLink(randomRecipeID){
+	// 	var configLink = {
+	// 		headers:{
+	// 			"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
+	// 		}
+	// 	};
 
-		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/'+randomRecipeID+'/information', configLink);
-	}
+	// 	return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/'+randomRecipeID+'/information', configLink);
+	// }
 
 
 	return {
 		getRecipes : getRecipes,
-		getLink : getLink
+		// getLink : getLink
 	};
 
 
