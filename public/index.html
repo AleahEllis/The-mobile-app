@@ -29,25 +29,11 @@
 				    ng-class="'brewMenu'"
 				    id="beerDropdown"
 				    >
-				<option value="">Then choose your beer ...</option>
+				<option value="" id="beerChoice">Then choose your beer ...</option>
 			</select>
 
-			<button onclick="pair()">PAIR</button>
+			<button ng-click="pair()">PAIR</button>
 		</div>
-	    
-		<script>
-
-			var pair = function(e){
-				if (!thing2) {
-					e.preventDefault();
-				} else {
-					
-				}
-			}
-
-
-		</script>
-
 
 	    <!-- template view probably? -->
 	<!--     <div ng-controller="recipeController">
@@ -69,6 +55,7 @@
 	<!-- Angular, Angular Route libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
 	<script src="scripts/libs/angular-route.min.js"></script>
+	<script src="scripts/libs/jquery.min.js"></script>
 	<!-- router -->
 	<script src="scripts/routes.js"></script>
 
@@ -82,6 +69,9 @@
 
 	<!-- partial view controllers -->
 	<script src="scripts/controllers/landingPageController.js"></script>
-	<script src="scripts/controllers/pairingController.js"></script>		
+	<script src="scripts/controllers/pairingController.js"></script>	
+
+
+	<script src="scripts/app.js"></script>	
 </body>
 </html>

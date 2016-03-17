@@ -2,15 +2,14 @@
 * {
   margin: 0;
 }
-}
-@font-face {
+/*@font-face {
   font-family: 'gunslinger';
   src: url("/Gunslinger.ttf");
 }
 @font-face {
  font-family: 'gunslinger';
   src: url("/Gunslinger.ttf");
-}
+}*/
 
 body {
   font-family: Verdana;
