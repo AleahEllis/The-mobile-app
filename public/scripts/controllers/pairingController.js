@@ -50,12 +50,12 @@ app.controller('pairingController', ['$scope', 'recipeService','pairingService',
 	//below, it is undefined.
 
 
-	recipeService.getLink($scope.randomRecipeID)
+	// recipeService.getLink($scope.randomRecipeID)
 
-	.then(function(response){
-		$scope.recipeLink = (response.data.sourceUrl);
-		console.log($scope.recipeLink);
-	});
+	// .then(function(response){
+	// 	$scope.recipeLink = (response.data.sourceUrl);
+	// 	console.log($scope.recipeLink);
+	// });
 
 
 }]);
