@@ -24,9 +24,13 @@ angular.module('beerApp')
 		console.log(response);
 	})
 
-	.then(function(response){
-		//use ID to get recipe link
-	})
+	// gets the ID for all the recipes. NOT tested yet
+	// .then(function(response){
+	// 	for (var i=0; i<response.data.length; i++){
+	// 		$scope.recipes.push(response.data[i].ID);
+	// 	};
+		
+	// })
 
 
 

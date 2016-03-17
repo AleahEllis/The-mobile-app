@@ -24,6 +24,10 @@ app.factory('recipeService', ['$http', function($http){
 
 	};
 
+	function getLink(){
+		
+	}
+
 
 
 }]);
