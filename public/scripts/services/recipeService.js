@@ -30,7 +30,8 @@ app.factory('recipeService', ['$http', function($http){
 	// function getLink(randomRecipeID){
 	// 	var configLink = {
 	// 		headers:{
-	// 			"X-Mashape-Key": "aR3nshomG6mshJHDTkmYw2RcVtOzp1uko4QjsnEwKVfHOGdlHA"
+	// 			"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
+
 	// 		}
 	// 	};
 

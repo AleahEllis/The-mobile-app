@@ -15,6 +15,7 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 			Type:"Strong Brown Chocolate Ale",
 			Description:"Nutty, round mouthfeel with an a blend of chocolate extract added for a rich, not-too-sweet mellow flavor profile.",
+            Flavor:["vanilla", "cinnamon", "chocolate"],
 	        Glass:"Nonic",
 	        Temperature:"50-55°F"
 		},
@@ -23,7 +24,8 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"Pale Ale",
 			Description:"A unique and diverse beer bringing in flavors from English and German malts.",
-	        Glass:"Becker",
+	        Flavor:["lemon", "honey", "smoked"],
+            Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
 		{ //2
@@ -31,15 +33,17 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"Wheat Spiced Ale",
 			Description:"A beer with a pale golden hue, sweeter maltiness with light fruity notes. Crushed orange peel and coriander, clean heady aroma.",
-	        Glass:"Stein",
+            Flavor:["orange", "coriander", "lemon"],
+            Glass:"Stein",
 	        Temperature:"48-50°F"
 		},			
 		{ //3
 			Name:"D-light",
 			Brewery:"Atwater",
-	        Type:"Kolsch",
+	        Type:"Kölsch",
 			Description:"Clean, crisp and lightly floral.",
-	        Glass:"Stange",
+	        Flavor:["greens", "pear,", "nuts"],
+            Glass:"Stange",
 	        Temperature:"40-45°F"
 		},
 		{ //4
@@ -47,7 +51,8 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"IPA",
 			Description:"Crisp, clean and hoppy, lightly bready with notes of citrus and caramel.",
-	        Glass:"Seidel",
+	        Flavor:["grapefruit", "pepper", "rosemary"],
+            Glass:"Seidel",
 	        Temperature:"45-50°F"
 		},
 		{ //5
@@ -55,7 +60,8 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"American IPA",
 			Description:"A Super Cascade of American and Chinook hops makes gives you a full IPA experience.",
-	        Glass:"Seidel",
+	        Flavor:["orange peel", "cilantro", "oil"],
+            Glass:"Seidel",
 	        Temperature:"45-50°F"
 		},
 		{ //6
@@ -63,15 +69,17 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"Michelada",
 			Description:"Atwater Lager + Bloody Mary mix = party time.",
-	        Glass:"Becker",
+	        Flavor:["celery", "tomato", "salt"],
+            Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
 		{ //7
 			Name:"Purple Gang Pilsner",
 			Brewery:"Atwater",
-	        Type:"German Pilsner",
+	        Type:"Czech Pilsener",
 			Description:"Lightly malty and subtly sweet.",
-	        Glass:"Flute",
+	        Flavor:["rice", "lemon", "basil"],
+            Glass:"Flute",
 	        Temperature:"40-45°F"
 		},
 		{ //8
@@ -79,7 +87,8 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"English Porter Spiced Ale",
 			Description:"A copper cored porter with unmistakeable notes of vanilla and coffee. Brewed cold to eliminates burnt flavors.",
-	        Glass:"Pint",
+	        Flavor:["vanilla", "coffee", "butter"],
+            Glass:"Pint",
 	        Temperature:"50-55°F"
 		},
 		{ //9
@@ -87,7 +96,8 @@ app.factory('pairingService', function() {
 			Brewery:"Atwater",
 	        Type:"Doppelbock",
 			Description:"This exceptionally smooth caramel malt carries a crisp nutty flavor, along with a high dose of liquid courage.",
-	        Glass:"Pilsener",
+	        Flavor:["camembert", "raisin", "nut"],
+            Glass:"Pilsener",
 	        Temperature:"45-50°F"
 		}
 	]; // end of Atwater array
@@ -99,7 +109,8 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"English Porter",
 			Description:"English style robust porter, roasted malt character, with caramel malt undertones.",
-	        Glass:"Pint",
+	        Flavor:["grilled", "gruyere", "caramel"],
+            Glass:"Pint",
 	        Temperature:"50-55°F"
 		},
 		{ //1
@@ -107,15 +118,17 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Berliner Weisse",
 			Description:"Refreshing, tart, sour and acidic, with a lemony-citric fruit sharpness and almost no hop bitterness.",
-	        Glass:"Nonic",
+	        Flavor:["ham", "gouda", "mushroom"],
+            Glass:"Nonic",
 	        Temperature:"45-50°F"
 		},
 		{ //2
 			Name:"Antwerp's Placebo II",
 			Brewery:"Batch",
 	        Type:"Belgian Dark Strong Ale",
-			Description:"Big Beautiful Belgian Ale. Special bottle release on our 1 year anniversary!",
-	        Glass:"Snifter",
+			Description:"A big beautiful Belgian ale. Special bottle release on our 1 year anniversary!",
+	        Flavor:["blueberry", "barbecue", "anise"],
+            Glass:"Snifter",
 	        Temperature:"45-50°F"
 		},	
 		{ //3
@@ -123,7 +136,8 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"American Pale Ale",
 			Description:"Featuring Michigan grown Empire Hops. Light and crisp with a nice floral/fruity finish.",
-	        Glass:"Becker",
+	        Flavor:["lavender", "sage", "roast"],
+            Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
 		{ //4
@@ -131,7 +145,8 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Black IPA",
 			Description:"Low End Theory’s bigger brother.",
-	        Glass:"Becker",
+	        Flavor:["sharp", "pepper", "pepperoni"],
+            Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
 		{ //5
@@ -139,7 +154,8 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Dark Black IPA",
 			Description:"Copious amounts of Michigan grown Chinook and Cascade hops.",
-	        Glass:"Becker",
+	        Flavor:["mushroom", "figs", "nut"],
+            Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
 		{ //6
@@ -147,7 +163,8 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Milk Stout",
 			Description:"Nice, creamy and roasty flavors.",
-	        Glass:"Nonic",
+	        Flavor:["chocolate", "cream", "nut"],
+            Glass:"Nonic",
 	        Temperature:"50-55°F"
 		},
 		{ //7
@@ -155,15 +172,17 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Wheat Wine",
 			Description:"Bready, oaky, alcohol heat characters. Good Times.",
-	        Glass:"Snifter",
+	        Flavor:["smoked", "chilli", "peach"],
+            Glass:"Snifter",
 	        Temperature:"45-50°F"
 		},
 		{ //8
 			Name:"The Noive",
 			Maker:"Batch",
 	        Type:"Kölsch",
-			Description:"The Noive of some people. Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
-	        Glass:"Stange",
+			Description:"The Noive of some people! Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
+	        Flavor:["bratwurst", "apricot", "coriander"],
+            Glass:"Stange",
 	        Temperature:"40-45°F"
 		},
 		{ //9
@@ -171,7 +190,8 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Belgian Witbier",
 			Description:"A delicious witbier featuring coriander and orange peel. Yum!",
-	        Glass:"Pilsener",
+	        Flavor:["coriander", "orange", "mascarpone"],
+            Glass:"Pilsener",
 	        Temperature:"45-50°F"
 		},
 		{ //10
@@ -179,7 +199,8 @@ app.factory('pairingService', function() {
 			Maker:"Batch",
 	        Type:"Double IPA",
 			Description:"Nicely balanced, brewed with cascade and centennial hops.",
-	        Glass:"Snifter",
+	        Flavor:["salt", "grilled", "bacon"],
+            Glass:"Snifter",
 	        Temperature:"50-55°F"
 		},	
 		{ //11
@@ -187,7 +208,8 @@ app.factory('pairingService', function() {
 			Maker:"Batch",
 	        Type:"Belgian Sparkling Ale",
 			Description:"A dry/semi-dry sparkling ale featuring fruity and spicy fermentation character with low hop and low malt presence. It’s all about the Belgian yeast, baby!",
-	        Glass:"Pint",
+	        Flavor:["batter", "sausage", "orange"],
+            Glass:"Pint",
 	        Temperature:"45-50°F"
 		},
 		{ //12
@@ -195,7 +217,8 @@ app.factory('pairingService', function() {
 			Maker:"Batch",
 	        Type:"Wheat Kölsch",
 			Description:"Light Refreshing Wheat/Kölsch Hybrid",
-	        Glass:"Stange",
+	        Flavor:["egg", "gouda", "crab"],
+            Glass:"Stange",
 	        Temperature:"40-45°F"
 		},
 		{ //12
@@ -203,7 +226,8 @@ app.factory('pairingService', function() {
 			Maker:"Batch",
 	        Type:"Wheat IPA",
 			Description:"Dry hopped with Cascade and Centennial hops for intense hop aromatics.",
-	        Glass:"Pint",
+	        Flavor:["curry", "barbecue", "blue cheese"],
+            Glass:"Pint",
 	        Temperature:"45-50°F"
 		}
 	]; // end of Batch array
