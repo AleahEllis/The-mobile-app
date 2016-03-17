@@ -31,6 +31,7 @@ app.factory('recipeService', ['$http', function($http){
 	// 	var configLink = {
 	// 		headers:{
 	// 			"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
+
 	// 		}
 	// 	};
 
