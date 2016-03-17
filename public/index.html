@@ -14,7 +14,7 @@
 
 	<div class="container">
 		<!-- dropdown menus to appear sitewide -->
-		<div ng-controller="pairingController" class="dropdowns">
+		<div ng-controller="mainController" class="dropdowns">
 			<!-- dropdown for breweries -->
 			<select ng-model="thing1" 
 			        ng-options="brewery for brewery in breweries" 
@@ -25,33 +25,31 @@
 			</select>		
 			<!-- dropdown for beers -->
 			<select ng-model="thing2"
-			        ng-options="beer for beer in choice2"
+			        ng-options="beer.Name for beer in beers"
 				    ng-class="'brewMenu'"
 				    id="beerDropdown"
+				    ng-change="saveBeerInfo(thing2)"
 				    >
 				<option value="" id="beerChoice">Then choose your beer ...</option>
 			</select>
+    
+			<br />
+			<br />
 
-			<button ng-click="pair()">PAIR</button>
-		</div>
+			<!-- pairingController nested inside mainController -->
+		    <div ng-controller="pairingController" class='views' id="beerInfo">
+		    	<p><span>Name:</span> {{beer.Name}}</p>
+		    	<p><span>Brewery:</span> {{beer.Brewery}}</p>
+		    	<p><span>Type:</span> {{beer.Type}}</p>
+		    	<p><span>Description:</span> {{beer.Description}}</p>
+		    	<p><span>Glass:</span> {{beer.Glass}}</p>
+		    	<p><span>Temperature:</span> {{beer.Temperature}}</p>
+		    	<p><span>Try these recipes with your beer:</span> Coming soon ...</p>
+			</div>
 
-	    <!-- template view probably? -->
-	    <!-- <div ng-controller="recipeController">
-	        <ul ng-repeat="result in results">
-	            <li>{result}</li>
-	        </ul>
-	    </div>
- -->
+		</div> <!-- end of mainController -->
 
-		<!-- view for partials -->
-
-		<a href="#/">Home</a>
-	    <a href="#/views/pairing">Pairings</a>
-
-		<div ng-view="" class="views"></div>
-		<!-- <ng-view class="views"></ng-view> -->
-
-	</div>
+	</div> <!-- end of container -->
 
 	<!-- Angular, Angular Route libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
@@ -72,6 +70,7 @@
 
 
 	<!-- partial view controllers -->
+	<script src="scripts/controllers/mainController.js"></script>
 	<script src="scripts/controllers/landingPageController.js"></script>
 	<script src="scripts/controllers/pairingController.js"></script>	
 

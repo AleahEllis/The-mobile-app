@@ -232,47 +232,20 @@ app.factory('pairingService', function() {
 		}
 	]; // end of Batch array
 
-	var choice2 = [];
-
 	var selectBeer = function(choice1){
 		if (choice1 === breweries[0]) {
-			for (var i = 0; i < atwater.length; i++) {
-				choice2.push(atwater[i].Name);
-			}
+			return atwater;
 		}
 		if (choice1 === breweries[1]) {
-			for (var i = 0; i < batch.length; i++) {
-				choice2.push(batch[i].Name);
-			}
+			return batch;
 		}		
 	}
-
-	var selectedBeer;
-	var sbIndex;
-
-	// grabs value of selected beer from dropdown
-
-	var usersBeerChoice = $('#beerDropdown').bind('change', function() {
-		selectedBeer = $(this).find('option:selected').text();
-		// return selectedBeer;
-		for (var i = 0; i < atwater.length; i++) {
-		  if (atwater[i].Name === selectedBeer) {
-		    sbIndex = i;
-		  }
-		}
-		console.log(atwater[sbIndex]);
-		return sbIndex;
-	});
-
 
 	return { // data gets returned to pairingController
 		breweries: breweries,
 		atwater: atwater,
 		batch: batch,
-		choice2: choice2,		
-		selectBeer: selectBeer,
-		selectedBeer: selectedBeer,
-		usersBeerChoice: usersBeerChoice,
-		sbIndex: sbIndex
+		selectBeer: selectBeer
 	};
+	
 });

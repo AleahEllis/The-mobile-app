@@ -58,11 +58,4 @@ app.controller('pairingController', ['$scope', 'recipeService','pairingService',
 	});
 
 
-
-
-	
 }]);
-
-
-
-
