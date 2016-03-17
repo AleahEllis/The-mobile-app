@@ -228,7 +228,6 @@ angular.module('beerApp')
 		atwater: atwater,
 		batch: batch,
 		choice2: choice2,		
-		selectBeer: selectBeer,
-		pair: pair
+		selectBeer: selectBeer
 	};
 });
