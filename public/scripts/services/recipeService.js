@@ -18,24 +18,25 @@ app.factory('recipeService', ['$http', function($http){
 		};
 		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients', config);
 
-		//function to get the links. I put this function within getRecipes 
-		//bc in the controller, the .then is off of getRecipes.
-		// function getLink(){
-		// 	var configLink = {
-		// 		params:{
-		// 			"ID": ""
-		// 		},
-		// 		headers:{
-		// 			"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
-		// 		}
-		// 	};
-		// 	return$http.get('LINK TO GET RECIPE SOURCE', configLink)
-		// }
+
+	};
+
+	// below is the function to get the links
+	
+	function getLink(){
+		var configLink = {
+			headers:{
+				"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
+			}
+		};
+		console.log("hello");
+		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/156992/information', configLink);
 	}
 
-	return {
-		getRecipes : getRecipes
 
+	return {
+		getRecipes : getRecipes,
+		getLink : getLink
 	};
 
 
