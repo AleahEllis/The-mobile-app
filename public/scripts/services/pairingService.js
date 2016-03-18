@@ -1,5 +1,5 @@
 angular.module('beerApp')
-.factory('pairingService', function() {//may need rootscope
+.factory('pairingService', function() {
 
 	var breweries = [
 		'Atwater Brewery', 
@@ -178,7 +178,7 @@ angular.module('beerApp')
 		},
 		{ //8
 			Name:"The Noive",
-			Maker:"Batch",
+			Brewery:"Batch",
 	        Type:"Kölsch",
 			Description:"The Noive of some people! Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
 	        Flavor:"bratwurst,apricot,coriander",
@@ -196,7 +196,7 @@ angular.module('beerApp')
 		},
 		{ //10
 			Name:"Son of a Batch II",
-			Maker:"Batch",
+			Brewery:"Batch",
 	        Type:"Double IPA",
 			Description:"Nicely balanced, brewed with cascade and centennial hops.",
 	        Flavor:"salt, grilled, bacon",
@@ -205,7 +205,7 @@ angular.module('beerApp')
 		},	
 		{ //11
 			Name:"Unrequited",
-			Maker:"Batch",
+			Brewery:"Batch",
 	        Type:"Belgian Sparkling Ale",
 			Description:"A dry/semi-dry sparkling ale featuring fruity and spicy fermentation character with low hop and low malt presence. It’s all about the Belgian yeast, baby!",
 	        Flavor:"batter, sausage, orange",
@@ -214,7 +214,7 @@ angular.module('beerApp')
 		},
 		{ //12
 			Name:"Wheated Kölsch",
-			Maker:"Batch",
+			Brewery:"Batch",
 	        Type:"Wheat Kölsch",
 			Description:"Light Refreshing Wheat/Kölsch Hybrid",
 	        Flavor:"egg, gouda, crab",
@@ -223,7 +223,7 @@ angular.module('beerApp')
 		},
 		{ //12
 			Name:"Wheated Session IPA",
-			Maker:"Batch",
+			Brewery:"Batch",
 	        Type:"Wheat IPA",
 			Description:"Dry hopped with Cascade and Centennial hops for intense hop aromatics.",
 	        Flavor:"curry, barbecue, blue cheese",
@@ -232,6 +232,7 @@ angular.module('beerApp')
 		}
 	]; // end of Batch array
 
+	// returns brewery array based on selected brewery
 	var selectBrewery = function(breweryChoice){
 		if (breweryChoice === breweries[0]) {
 			return atwater;
