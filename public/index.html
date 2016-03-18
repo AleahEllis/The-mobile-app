@@ -19,7 +19,7 @@
 			<select ng-model="dropdown1" 
 			        ng-options="brewery for brewery in breweries" 
 			        ng-class="'brewMenu'"
-			        ng-change="selectBeer(dropdown1)"
+			        ng-change="selectBrewery(dropdown1)"
 			        >
 				<option value="">Choose your brewery ...</option>
 			</select>
@@ -28,9 +28,9 @@
 			        ng-options="beer.Name for beer in beers"
 				    ng-class="'brewMenu'"
 				    id="beerDropdown"
-				    ng-change="saveBeerInfo(dropdown2); showBeerInfo()"
+				    ng-change="selectBeer(dropdown2); showBeerInfo()"
 				    >
-				<option value="" id="beerChoice">Then choose your beer ...</option>
+				<option value="">Then choose your beer ...</option>
 			</select>
 
 			<!-- pairingController nested inside mainController -->
@@ -39,9 +39,9 @@
 		    	<p><span>Brewery:</span> {{beer.Brewery}}</p>
 		    	<p><span>Type:</span> {{beer.Type}}</p>
 		    	<p><span>Description:</span> {{beer.Description}}</p>
-		    	<p><span>Glass:</span> {{beer.Glass}}</p>
+		    	<p><span>Glass:</span> {{beer.Glass}}</p>		    	
 		    	<p><span>Temperature:</span> {{beer.Temperature}}</p>
-		    	<p><span>Try this recipe with your beer:</span> {{randomRecipe}}</p>
+		    	<p><span>Try this recipe with your beer:</span> <a target=blank href="{{recipeLink}}">{{randomRecipe}}</a></p>
 			</div>
 
 		</div> <!-- end of mainController -->
