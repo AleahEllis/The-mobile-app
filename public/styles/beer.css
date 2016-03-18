@@ -5,6 +5,10 @@
 body {
   font-family: Verdana;
   background-color: #b48c2d;
+  background: url("../images/appBackground.png");
+  background-repeat: no-repeat;
+  background-size: %100;
+  
 }
 .container {
   width: 80%;
@@ -13,7 +17,7 @@ body {
 /* header */
 .header {
   width: 100%;
-  background-color: #907024;
+/*  background-color: #907024;*/
   padding: 20px 0px;
 }
 h1 {

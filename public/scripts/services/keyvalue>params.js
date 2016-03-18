@@ -4,7 +4,7 @@ angular.module('beerApp')
     var stringValue = 'choice2';//the beer type that was chosen
     var flavorObject = { //the 3 flavors that correspond to the chosen beer
         data.flavor: [0,1,2]
-        console.log(flavorObject)
+        
     };
     
 //     return {

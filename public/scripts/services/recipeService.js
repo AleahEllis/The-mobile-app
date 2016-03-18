@@ -6,10 +6,10 @@ app.factory('recipeService', ['$http', function($http){
 	return params.push(ingredients);
 	//How can I get the ingredients?
 	};
-	function getRecipes(){
+	function getRecipes(method){
 		var config = {
 			params:{
-				"ingredients": "grapefriut,rosemary,pepper" ,
+				"ingredients": method.Flavor , //"grapefruit,rosemary,pepper"
 				"number": 3
 			},
 			headers:{
