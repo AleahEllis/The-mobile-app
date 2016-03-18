@@ -39,7 +39,7 @@ app.controller('pairingController', ['$scope', 'recipeService','pairingService',
 		$scope.randomRecipeID = $scope.ID[recipeIndex];
 	
 
-		console.log($scope.randomRecipeID);
+		
 
 		//below is going to take the URL from the call we make with the ID
 
@@ -47,7 +47,7 @@ app.controller('pairingController', ['$scope', 'recipeService','pairingService',
 
 		.then(function(response){
 			$scope.recipeLink = (response.data.sourceUrl);
-			console.log($scope.recipeLink);
+			
 		});
 	});
 	
