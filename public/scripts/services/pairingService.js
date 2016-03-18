@@ -1,5 +1,5 @@
-var app = angular.module('beerApp')
-app.factory('pairingService', function() {
+angular.module('beerApp')
+.factory('pairingService', function() {//may need rootscope
 
 	var breweries = [
 		'Atwater Brewery', 
@@ -172,7 +172,7 @@ app.factory('pairingService', function() {
 			Brewery:"Batch",
 	        Type:"Wheat Wine",
 			Description:"Bready, oaky, alcohol heat characters. Good Times.",
-	        Flavor:"smoked, chilli, peach",
+	        Flavor:"smoked,chilli,peach",
             Glass:"Snifter",
 	        Temperature:"45-50°F"
 		},
@@ -181,7 +181,7 @@ app.factory('pairingService', function() {
 			Maker:"Batch",
 	        Type:"Kölsch",
 			Description:"The Noive of some people! Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
-	        Flavor:"bratwurst, apricot, coriander",
+	        Flavor:"bratwurst,apricot,coriander",
             Glass:"Stange",
 	        Temperature:"40-45°F"
 		},

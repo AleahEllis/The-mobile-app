@@ -1,6 +1,6 @@
-angular.module('beerApp')
-.factory('landingPageService', function() {
-	return {
+// angular.module('beerApp')
+// .factory('landingPageService', function() {
+// 	return {
 
-	};
-});
+// 	};
+// });

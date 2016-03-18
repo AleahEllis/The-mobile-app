@@ -1,11 +1,11 @@
-angular.module('beerApp')
+// angular.module('beerApp')
 
-.service('keyValueService', function($scope, pairingService) {
-    var stringValue = 'choice2';//the beer type that was chosen
-    var flavorObject = { //the 3 flavors that correspond to the chosen beer
-        data.flavor: [0,1,2]
+// .service('keyValueService', function($scope, pairingService) {
+//     var stringValue = 'choice2';//the beer type that was chosen
+//     var flavorObject = { //the 3 flavors that correspond to the chosen beer
+//         data.flavor: [0,1,2]
         
-    };
+//     };
     
 //     return {
 //         getString: function() {
