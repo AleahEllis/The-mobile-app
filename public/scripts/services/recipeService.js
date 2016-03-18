@@ -1,11 +1,6 @@
 angular.module('beerApp')
 
-.factory('recipeService', ['$http', function($http){//may need root scope
-
-	// var pushIngredients = function(ingredient){
-	// return params.push(ingredients);
-	// //How can I get the ingredients?
-	// };
+.factory('recipeService', ['$http', function($http){
 
 	var flavors;
 
@@ -31,7 +26,6 @@ angular.module('beerApp')
 	};
 
 	// below is the function to get the links. 
-	
 	function getLink(randomRecipeID){
 		var configLink = {
 			headers:{
@@ -43,18 +37,11 @@ angular.module('beerApp')
 		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/'+randomRecipeID+'/information', configLink);
 	}
 
-
 	return {
 		getRecipes : getRecipes,
-		getLink : getLink,
-		setFlavor : setFlavor,
-		getFlavor : getFlavor
+		getLink    : getLink,
+		setFlavor  : setFlavor,
+		getFlavor  : getFlavor
 	};
 
-
-
-
-
-
 }]);
-	
