@@ -10,7 +10,6 @@ app.controller('pairingController', ['$scope', 'recipeService','pairingService',
 	$scope.usersBeerChoice = pairingService.usersBeerChoice;
 	$scope.sbIndex = pairingService.sbIndex;
 
-
 // app.directive('pairingDirective', function() {
 // 	return {
 // 		templateUrl: 'views/pairing.html'

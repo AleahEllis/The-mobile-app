@@ -18,4 +18,9 @@ angular.module('beerApp')
 		$scope.beer = choice2;
 	};
 
+	// waits until beer has been selected to show partial view
+	$scope.showBeerInfo = function(){
+		document.getElementById('beerInfo').style.display = 'block';
+	};
+
 }]);
