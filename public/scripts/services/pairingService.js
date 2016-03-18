@@ -232,11 +232,11 @@ app.factory('pairingService', function() {
 		}
 	]; // end of Batch array
 
-	var selectBeer = function(choice1){
-		if (choice1 === breweries[0]) {
+	var selectBrewery = function(breweryChoice){
+		if (breweryChoice === breweries[0]) {
 			return atwater;
 		}
-		if (choice1 === breweries[1]) {
+		if (breweryChoice === breweries[1]) {
 			return batch;
 		}		
 	}
@@ -245,7 +245,7 @@ app.factory('pairingService', function() {
 		breweries: breweries,
 		atwater: atwater,
 		batch: batch,
-		selectBeer: selectBeer
+		selectBrewery: selectBrewery
 	};
 	
 });
