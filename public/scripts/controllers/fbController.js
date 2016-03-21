@@ -1,10 +1,5 @@
-angular.module('beerApp', ['facebook'])
-//.provider?
-.config(['FacebookProvider', function($FacebookProvider) {
-  var myAppId = '997377097020840';
-  $FacebookProvider.provider.init(myAppId);
-}])
- 
+angular.module('beerApp', [])
+
 .controller('FBController', [
    '$scope',
    '$timeout',
@@ -63,7 +58,7 @@ angular.module('beerApp', ['facebook'])
 			    $scope.logged = false;  
 	  		});
 		});
-	}
+	};
       
 	$scope.$on('Facebook:statusChange', function(ev, data) {
 		console.log('Status: ', data);
@@ -76,28 +71,11 @@ angular.module('beerApp', ['facebook'])
 	  		$scope.$apply(function() {
 			    $scope.salutation = false;
 			    $scope.byebye     = true;
-			    //}
-		    	$timeout(function() {
-			      	$scope.byebye = false;
-			    	}, 2000)
-	  			});//}:
-		};
-
+		})	    
+	    $timeout(function() {
+	      	$scope.byebye = false;
+	    	}, 2000)
+	  	};
 	});
 
-}]) // end of controller
-
-.directive('debug', function() {
-    return {
-      restrict: 'E',
-      scope: {
-        expression: '=val'
-      },
-      template: '<pre>{{debug(expression)}}</pre>',
-      link: function(scope) {
-        scope.debug = function(exp) {
-          return angular.toJson(exp, true);
-        };
-      }
-    };
-}); // end of directive
+}]); 
