@@ -43,9 +43,17 @@
 		    	<p><span>Temperature:</span> {{beer.Temperature}}</p>
 		    	<p><span>Try this recipe with your beer:</span> <!-- <a target=blank href="{{recipeLink}}">{{randomRecipe}}</a></p> -->
 		    	<ul>
-		    		<li ng-repeat="recipe in recipes">{{recipe}}</li>
+		    		
+		    		<li><a target="blank" href="{{recipeLink[0]}}">{{recipes[0]}}</a></li>
+		    		<li><a target="blank" href="{{recipeLink[1]}}">{{recipes[1]}}</a></li>
+		    		<li><a target="blank" href="{{recipeLink[2]}}">{{recipes[2]}}</a></li>
+
+		    		
 		    	</ul>
-		    	<h2 ng-repeat="link in recipeLink">{{link}}</h2>
+		  <!--   	<ul>
+		    		<li ng-repeat="link in recipeLink">{{link}}</li>
+		    	</ul> -->
+		    	
 			</div>
 
 		</div> <!-- end of mainController -->
