@@ -5,11 +5,8 @@ angular.module('beerApp')
 	$scope.batch        = pairingService.batch;
 	$scope.beerChoice   = pairingService.beerChoice;
 	$scope.sbIndex      = pairingService.sbIndex;
-	$scope.recipes;
-	$scope.ID;
-	$scope.randomRecipe;
-	$scope.randomRecipeID;
-	$scope.recipeLink;
+
+	$scope.recipeArray;
 
 	// stores the beers for a chosen brewery in an array
 	// populates the second dropdown with the names of said beers
@@ -30,27 +27,34 @@ angular.module('beerApp')
 		var flavors = recipeService.getFlavor();
 		recipeService.getRecipes(flavors)
 		.then(function(response){
-			$scope.recipes = [];
-			$scope.ID = [];
+			$scope.recipeArray = new Array();
 			for (var i=0; i<response.data.length; i++){
-				$scope.recipes.push(response.data[i].title);
-				$scope.ID.push(response.data[i].id); 
-			};
-			
-			//This chooses a random recipe and correspinding ID
-			// var recipeIndex = Math.floor(Math.random() * $scope.recipes.length);
-			// $scope.randomRecipe = $scope.recipes[recipeIndex];
-			// $scope.randomRecipeID = $scope.ID[recipeIndex];
-
-			//below is going to take the URL from the call we make with the ID
-			$scope.recipeLink = [];
-			for (var j=0; j<$scope.ID.length; j++){
-				recipeService.getLink($scope.ID[j])
-				.then(function(response){
-					$scope.recipeLink.push(response.data.sourceUrl);
-					console.log($scope.recipeLink);
+				$scope.recipeArray.push({
+					"title": response.data[i].title, 
+					"ID": response.data[i].id,
+					"url": ''
 				});
 			};
+
+			$scope.recipeArray.forEach(function(recipe) {
+				console.log(recipe);
+				recipeService.getLink(recipe.ID)
+				.then(function(response){
+					$scope.recipeArray[i].push({"url": response.data.sourceUrl});
+				});
+
+			});
+
+			// below is going to take the URL from the call we make with the ID
+			// for (var j=0; j<$scope.recipeArray.length; j++){
+			// 	recipeService.getLink($scope.recipeArray[j].ID)
+			// 	.then(function(response){
+			// 		$scope.recipeArray[i].push({"url": response.data.sourceUrl});
+			// 	});
+			// };
+
+			console.log($scope.recipeArray);
+
 		});
 	};
 
