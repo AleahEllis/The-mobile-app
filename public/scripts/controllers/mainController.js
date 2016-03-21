@@ -5,8 +5,8 @@ angular.module('beerApp')
 	$scope.batch        = pairingService.batch;
 	$scope.beerChoice   = pairingService.beerChoice;
 	$scope.sbIndex      = pairingService.sbIndex;
-	$scope.recipes      = [];
-	$scope.ID           = [];
+	$scope.recipes;
+	$scope.ID;
 	$scope.randomRecipe;
 	$scope.randomRecipeID;
 	$scope.recipeLink;
@@ -30,17 +30,20 @@ angular.module('beerApp')
 		var flavors = recipeService.getFlavor();
 		recipeService.getRecipes(flavors)
 		.then(function(response){
+			$scope.recipes = [];
+			$scope.ID = [];
 			for (var i=0; i<response.data.length; i++){
 				$scope.recipes.push(response.data[i].title);
 				$scope.ID.push(response.data[i].id); 
 			};
 			
+			//This chooses a random recipe and correspinding ID
 			var recipeIndex = Math.floor(Math.random() * $scope.recipes.length);
 			$scope.randomRecipe = $scope.recipes[recipeIndex];
 			$scope.randomRecipeID = $scope.ID[recipeIndex];
 
 			//below is going to take the URL from the call we make with the ID
-			recipeService.getLink($scope.randomRecipeID)
+			recipeService.getLink($scope.ID)
 
 			.then(function(response){
 				$scope.recipeLink = (response.data.sourceUrl);
