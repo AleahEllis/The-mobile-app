@@ -26,7 +26,7 @@ angular.module('beerApp')
 	};
 
 	// below is the function to get the links. 
-	function getLink(randomRecipeID){
+	function getLink(ID){
 		var configLink = {
 			headers:{
 				"X-Mashape-Key": "vZ9WxL4aNXmshyMrjTgnMDIq9g2Rp18Q3i8jsn4fyTzUkdG9Vg"
@@ -34,7 +34,7 @@ angular.module('beerApp')
 			}
 		};
 
-		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/'+randomRecipeID+'/information', configLink);
+		return $http.get('https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/'+ID+'/information', configLink);
 	}
 
 	return {

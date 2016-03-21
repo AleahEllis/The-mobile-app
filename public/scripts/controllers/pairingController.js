@@ -21,8 +21,8 @@ angular.module('beerApp')
 	// 	$scope.randomRecipeID = $scope.ID[recipeIndex];
 	// 	console.log(recipeService.getFlavor());
 
-	// 	//below is going to take the URL from the call we make with the ID
-	// 	recipeService.getLink($scope.randomRecipeID)
+	// // 	//below is going to take the URL from the call we make with the ID
+	// // 	recipeService.getLink($scope.randomRecipeID)
 
 	// 	.then(function(response){
 	// 		$scope.recipeLink = (response.data.sourceUrl);
