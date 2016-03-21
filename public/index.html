@@ -41,19 +41,12 @@
 		    	<p><span>Description:</span> {{beer.Description}}</p>
 		    	<p><span>Glass:</span> {{beer.Glass}}</p>		    	
 		    	<p><span>Temperature:</span> {{beer.Temperature}}</p>
-		    	<p><span>Try this recipe with your beer:</span> <!-- <a target=blank href="{{recipeLink}}">{{randomRecipe}}</a></p> -->
-		    	<ul>
-		    		
-		    		<li><a target="blank" href="{{recipeLink[0]}}">{{recipeArray[0].title}}</a></li>
-		    		<li><a target="blank" href="{{recipeLink[1]}}">{{recipeArray[1].title}}</a></li>
-		    		<li><a target="blank" href="{{recipeLink[2]}}">{{recipeArray[2].title}}</a></li>
-
-		    		
-		    	</ul>
-		  <!--   	<ul>
-		    		<li ng-repeat="link in recipeLink">{{link}}</li>
-		    	</ul> -->
-		    	
+		    	<p><span>Try this recipe with your beer:</span> 
+			    	<ul>
+			    		<li><a target="blank" href="{{recipeArray[0].url}}">{{recipeArray[0].title}}</a></li>
+			    		<li><a target="blank" href="{{recipeArray[1].url}}">{{recipeArray[1].title}}</a></li>
+			    		<li><a target="blank" href="{{recipeArray[2].url}}">{{recipeArray[2].title}}</a></li>	
+			    	</ul>
 			</div>
 
 		</div> <!-- end of mainController -->
