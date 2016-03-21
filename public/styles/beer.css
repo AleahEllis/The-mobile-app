@@ -2,10 +2,14 @@
 * {
   margin: 0;
 }
+#logo {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
 body {
   font-family: Verdana;
   background-color: #b48c2d;
-  height: 100%;
 }
 .container {
   width: 80%;
@@ -14,7 +18,9 @@ body {
 /* header */
 .header {
   width: 100%;
-  padding: 20px 0px;
+  background-color: #907024;
+  padding: 5px 0;
+  margin: 0;
 }
 h1 {
   text-align: center;
@@ -23,19 +29,18 @@ h1 {
 }
 a {
   text-align: center;
+  text-decoration: none;
+  color: #000;
 }
 /*diff colors obviously*/
-a:link{
- color:brown
+a:link {
+  color: #a52a2a;
 }
-
-a:visited{
- color:dark-grey
+a:visited {
+  color: dark-grey;
 }
-a:hover{
- color:grey
-}
-
+a:hover {
+  color: #808080;
 }
 /* dropdown menus */
 .dropdowns {
@@ -54,7 +59,7 @@ a:hover{
 #beerDropdown {
   float: right;
 }
-.brewMenu:hover {
+.brewMenuhover {
   cursor: pointer;
   background-color: #e3c98d;
 }
@@ -72,83 +77,75 @@ a:hover{
 #beerInfo span {
   font-weight: bold;
 }
-
 /* footer */
 footer {
   text-align: center;
   color: #fff;
   font-size: 100%;
-  clear:both;
-  border: 1px solid black;
+  clear: both;
+  border: 1px solid #000;
   line-height: 2em;
   padding: 2em;
-  position: fixed;/* can't change without adding more code */
-  bottom: 0;/* can't change without adding more code */
-  width:100%;/* can't change without adding more code */
-
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-
 /* lightbox styling and functionality- some things we should not change */
-#contactFade{
-    display: none; /* can't change */
-    position: fixed;/* can't change */
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index:1001;/* can't change */
-    -moz-opacity: 0.7;/* can't change */
-    opacity:.70;/* can't change */
-    filter: alpha(opacity=70);/* can't change */
+#contactFade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
-
-#contact{
-    display: none;/* can't change */
-    position: fixed;/* can't change */
-    top: 45%;
-    left: 45%;
-    right: 45%;
-    bottom: 45%;
-    width: 4em;
-    height: 8em;
-  /*  margin-left: -150px;
-    margin-top: -100px;*/                 
-    padding: .5em;
-    border: 2px solid #FFF;
-    background: #CCC;
-    z-index:1002;/* can't change */
-    overflow:visible;/* can't change */
-    text-align: center;/* can't change */
+#contact {
+  display: none;
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  right: 45%;
+  bottom: 45%;
+  width: 4em;
+  height: 8em;
+  padding: 0.5em;
+  border: 2px solid #fff;
+  background: #ccc;
+  z-index: 1002;
+  overflow: visible;
+  text-align: center;
 }
-
-#aboutFade{
-    display: none;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index:1001;/* can't change */
-    -moz-opacity: 0.7;/* can't change */
-    opacity:.70;/* can't change */
-    filter: alpha(opacity=70);/* can't change */
+#aboutFade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
-
-#about{
-    display: none;
-    position: fixed;
-    top: 25%;
-    left: 25%;
-    right: 25%;
-    width: 40em;
-    height: 23em;
-    padding: .5em;
-    border: 2px solid #FFF;
-    background: #CCC;
-    z-index: 1002;/* can't change */
-    overflow: visible;/* can't change */
-    bottom: 25%;/* can't change */
-    text-align: center;/* can't change */
+#about {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  width: 40em;
+  height: 23em;
+  padding: 0.5em;
+  border: 2px solid #fff;
+  background-color: #ccc;
+  z-index: 1002;
+  overflow: visible;
+  bottom: 25%;
+  text-align: center;
 }
