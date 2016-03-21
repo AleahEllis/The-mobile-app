@@ -208,7 +208,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Belgian Sparkling Ale",
 			Description:"A dry/semi-dry sparkling ale featuring fruity and spicy fermentation character with low hop and low malt presence. It’s all about the Belgian yeast, baby!",
-	        Flavor:"cajun, sausage, orange",
+	        Flavor:"cloves, seafood",
             Glass:"Pint",
 	        Temperature:"45-50°F"
 		},
