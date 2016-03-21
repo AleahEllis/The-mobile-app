@@ -38,16 +38,19 @@ angular.module('beerApp')
 			};
 			
 			//This chooses a random recipe and correspinding ID
-			var recipeIndex = Math.floor(Math.random() * $scope.recipes.length);
-			$scope.randomRecipe = $scope.recipes[recipeIndex];
-			$scope.randomRecipeID = $scope.ID[recipeIndex];
+			// var recipeIndex = Math.floor(Math.random() * $scope.recipes.length);
+			// $scope.randomRecipe = $scope.recipes[recipeIndex];
+			// $scope.randomRecipeID = $scope.ID[recipeIndex];
 
 			//below is going to take the URL from the call we make with the ID
-			recipeService.getLink($scope.ID)
-
-			.then(function(response){
-				$scope.recipeLink = (response.data.sourceUrl);
-			});
+			$scope.recipeLink = [];
+			for (var j=0; j<$scope.ID.length; j++){
+				recipeService.getLink($scope.ID[j])
+				.then(function(response){
+					$scope.recipeLink.push(response.data.sourceUrl);
+					console.log($scope.recipeLink);
+				});
+			};
 		});
 	};
 
