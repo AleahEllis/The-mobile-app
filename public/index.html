@@ -44,9 +44,9 @@
 		    	<p><span>Try this recipe with your beer:</span> <!-- <a target=blank href="{{recipeLink}}">{{randomRecipe}}</a></p> -->
 		    	<ul>
 		    		
-		    		<li><a target="blank" href="{{recipeLink[0]}}">{{recipes[0]}}</a></li>
-		    		<li><a target="blank" href="{{recipeLink[1]}}">{{recipes[1]}}</a></li>
-		    		<li><a target="blank" href="{{recipeLink[2]}}">{{recipes[2]}}</a></li>
+		    		<li><a target="blank" href="{{recipeLink[0]}}">{{recipeArray[0].title}}</a></li>
+		    		<li><a target="blank" href="{{recipeLink[1]}}">{{recipeArray[1].title}}</a></li>
+		    		<li><a target="blank" href="{{recipeLink[2]}}">{{recipeArray[2].title}}</a></li>
 
 		    		
 		    	</ul>
@@ -80,6 +80,40 @@
     
 
 	</div> <!-- end of container -->
+
+<!-- footer with lightboxes-->
+	<footer> 
+		<span>
+<!-- Maak Productions - we should add a something silly like a group selfie or location info-->
+			&#169;MAAK productions | 
+
+<!-- Contact brings up all of our emails-->
+					
+			<a href="#" onclick="contact_open();">Contact</a>
+				<div id="contact">
+					<a href="mailto:email">Mike</a>
+					<a href="mailto:email">Aubrie</a>
+					<a href="mailto:email">KJ</a>
+					<a href="mailto:aleah.is@icloud.com">Aleah</a>
+				</div>
+			<div id="contactFade" onClick="contact_close();"></div>
+				
+<!-- API documentation -->
+
+			 | API documentation | 
+
+	<!-- About the App lightbox-->		 
+			<a href="#" onclick="about_open();">About The App</a>
+				<div id="about">
+					<p>
+						Crafted: Beer Meets Food is a city specific desktop and mobile friendly application. Interest in craft beer has exploded in recent years and as a result, specialty, small scale breweries have popped up in many major cities. Crafted allows the user to choose a local draft from local breweries and then pairs that choice brew with a recipie. Recipies are pulled from an external API based on each beer's custom flavor profile. The API returns three random, highly rated recipies which results in many unexpected but delicious beer/food pairings. Crafted: Beer Meets Food introduces the customer to local brews and food combinations that they may not have tried before, both expanding culinary horizons and nourishing local economies. The app is currently specific to downtown Detroit's thriving local breweries.
+					</p>
+								
+				</div>
+			<div id="aboutFade" onClick="about_close();"></div>
+							
+		</span>   
+  	</footer>
 
 	<!-- Angular libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
