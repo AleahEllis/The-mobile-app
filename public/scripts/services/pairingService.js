@@ -15,16 +15,16 @@ angular.module('beerApp')
 			Brewery:"Atwater",
 			Type:"Strong Brown Chocolate Ale",
 			Description:"Nutty, round mouthfeel with an a blend of chocolate extract added for a rich, not-too-sweet mellow flavor profile.",
-            Flavor: "vanilla, cinnamon, chocolate",
+            Flavor: "stilton, barbecue, chocolate",
 	        Glass:"Nonic",
 	        Temperature:"50-55°F"
 		},
 		{ //1
 			Name:"Detroit Pale Ale",
 			Brewery:"Atwater",
-	        Type:"Pale Ale",
+	        Type:"Altbier",
 			Description:"A unique and diverse beer bringing in flavors from English and German malts.",
-	        Flavor:"lemon, honey, smoked",
+	        Flavor:"gouda, pepper, smoked",
             Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
@@ -33,7 +33,7 @@ angular.module('beerApp')
 			Brewery:"Atwater",
 	        Type:"Wheat Spiced Ale",
 			Description:"A beer with a pale golden hue, sweeter maltiness with light fruity notes. Crushed orange peel and coriander, clean heady aroma.",
-            Flavor:"orange, coriander, lemon",
+            Flavor:"orange, chorizo, coriander",
             Glass:"Stein",
 	        Temperature:"48-50°F"
 		},			
@@ -87,7 +87,7 @@ angular.module('beerApp')
 			Brewery:"Atwater",
 	        Type:"English Porter Spiced Ale",
 			Description:"A copper cored porter with unmistakeable notes of vanilla and coffee. Brewed cold to eliminates burnt flavors.",
-	        Flavor:"vanilla, coffee, butter",
+	        Flavor:"mole, grilled, butter",
             Glass:"Pint",
 	        Temperature:"50-55°F"
 		},
@@ -96,7 +96,7 @@ angular.module('beerApp')
 			Brewery:"Atwater",
 	        Type:"Doppelbock",
 			Description:"This exceptionally smooth caramel malt carries a crisp nutty flavor, along with a high dose of liquid courage.",
-	        Flavor:"camembert, raisin, nut",
+	        Flavor:"camembert, roast, nut",
             Glass:"Pilsener",
 	        Temperature:"45-50°F"
 		}
@@ -145,7 +145,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Black IPA",
 			Description:"Low End Theory’s bigger brother.",
-	        Flavor:"sharp, pepper, pepperoni",
+	        Flavor:"sharp, curry, pepperoni",
             Glass:"Becker",
 	        Temperature:"40-45°F"
 		},
@@ -163,7 +163,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Milk Stout",
 			Description:"Nice, creamy and roasty flavors.",
-	        Flavor:"chocolate, cream, nut",
+	        Flavor:"mushroom, cream, nut",
             Glass:"Nonic",
 	        Temperature:"50-55°F"
 		},
@@ -172,7 +172,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Wheat Wine",
 			Description:"Bready, oaky, alcohol heat characters. Good Times.",
-	        Flavor:"smoked,chilli,peach",
+	        Flavor:"smoked, chilli, peach",
             Glass:"Snifter",
 	        Temperature:"45-50°F"
 		},
@@ -181,7 +181,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Kölsch",
 			Description:"The Noive of some people! Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
-	        Flavor:"bratwurst,apricot,coriander",
+	        Flavor:"filet,apricot,coriander",
             Glass:"Stange",
 	        Temperature:"40-45°F"
 		},
@@ -190,7 +190,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Belgian Witbier",
 			Description:"A delicious witbier featuring coriander and orange peel. Yum!",
-	        Flavor:"coriander, orange, mascarpone",
+	        Flavor:"cumin, orange, cilantro",
             Glass:"Pilsener",
 	        Temperature:"45-50°F"
 		},
@@ -208,7 +208,7 @@ angular.module('beerApp')
 			Brewery:"Batch",
 	        Type:"Belgian Sparkling Ale",
 			Description:"A dry/semi-dry sparkling ale featuring fruity and spicy fermentation character with low hop and low malt presence. It’s all about the Belgian yeast, baby!",
-	        Flavor:"batter, sausage, orange",
+	        Flavor:"cajun, sausage, orange",
             Glass:"Pint",
 	        Temperature:"45-50°F"
 		},
