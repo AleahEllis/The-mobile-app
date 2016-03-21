@@ -36,22 +36,22 @@ angular.module('beerApp')
 				});
 			};
 
-			$scope.recipeArray.forEach(function(recipe) {
-				console.log(recipe);
-				recipeService.getLink(recipe.ID)
-				.then(function(response){
-					$scope.recipeArray[i].push({"url": response.data.sourceUrl});
-				});
-
-			});
-
-			// below is going to take the URL from the call we make with the ID
-			// for (var j=0; j<$scope.recipeArray.length; j++){
-			// 	recipeService.getLink($scope.recipeArray[j].ID)
+			// $scope.recipeArray.forEach(function(recipe) {
+			// 	console.log(recipe);
+			// 	recipeService.getLink(recipe.ID)
 			// 	.then(function(response){
 			// 		$scope.recipeArray[i].push({"url": response.data.sourceUrl});
 			// 	});
-			// };
+
+			// });
+
+			// below is going to take the URL from the call we make with the ID
+			for (var j=0; j<$scope.recipeArray.length; j++){
+				recipeService.getLink($scope.recipeArray[j].ID)
+				.then(function(response){
+					$scope.recipeArray[j].url = response.data.sourceUrl;
+				});
+			};
 
 			console.log($scope.recipeArray);
 
