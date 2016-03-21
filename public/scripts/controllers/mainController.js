@@ -46,4 +46,9 @@ angular.module('beerApp')
 		});
 	};
 
+	// hides beer info when no beer is selected
+	$scope.hideBeerInfo = function() {
+		document.getElementById('beerInfo').style.display = 'none';
+	};
+
 }]);

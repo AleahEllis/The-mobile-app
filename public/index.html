@@ -19,7 +19,7 @@
 			<select ng-model="dropdown1" 
 			        ng-options="brewery for brewery in breweries" 
 			        ng-class="'brewMenu'"
-			        ng-change="selectBrewery(dropdown1)"
+			        ng-change="selectBrewery(dropdown1); hideBeerInfo()"
 			        >
 				<option value="">Choose your brewery ...</option>
 			</select>
@@ -53,7 +53,8 @@
 		
 		<!-- Facebook stuff -->		 
 
-		<div data-ng-controller="FBController">
+<!--
+		<div ng-controller="FBController">
 			
 			<div class="page-header">
 				<h4>Hello please log in below:</h4>  
@@ -71,8 +72,7 @@
 
 			<button type="button" class="btn btn-danger btn-large" data-ng-show="logged" data-ng-disabled="!facebookReady" data-ng-click="logout()">Logout</button>
 
-		</div>  <!-- end of FBController -->
-    
+		</div> --> <!-- end of FBController -->    
 
 	</div> <!-- end of container -->
 
@@ -112,7 +112,9 @@
 
 	<!-- Angular libraries -->
 	<script src="scripts/libs/angular.min.js"></script>
+<!--
 	<script src="scripts/libs/angular-route.min.js"></script>
+-->
 
 	<!-- router -->
 	<script src="scripts/routes.js"></script>
@@ -126,9 +128,13 @@
 	<script src="scripts/controllers/pairingController.js"></script>	
 
 	<!--facebook API things-->
-	<script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+<!--
+	<script data-require="angular.js@1.5.0" data-semver="1.5.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
 	
-    <script data-require"angular.js@1.1.5" data-semver="1.1.5" src="http://rawgithub.com/Ciul/angular-facebook/master/lib/angular-facebook.js"></script>
+    <script data-require"angular.js@1.5.0" data-semver="1.5.0" src="http://rawgithub.com/Ciul/angular-facebook/master/lib/angular-facebook.js"></script>
+    
     <script src="scripts/services/facebookService.js"></script>
+-->
+
 </body>
 </html>
