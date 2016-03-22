@@ -117,6 +117,8 @@ footer {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  bottom: 0;
+  position: fixed;
 }
 footer a {
   color: #9bc8d5;

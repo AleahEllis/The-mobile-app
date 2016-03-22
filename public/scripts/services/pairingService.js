@@ -260,7 +260,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "brewDetroitLogo.png",
+			Logo: "images/brewDetroitLogo.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -270,7 +270,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "brewDetroitLogo.png",
+			Logo: "images/brewDetroitLogo.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -280,7 +280,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "brewDetroitLogo.png",
+			Logo: "images/brewDetroitLogo.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -290,7 +290,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "brewDetroitLogo.png",
+			Logo: "images/brewDetroitLogo.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -300,7 +300,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "brewDetroitLogo.png",
+			Logo: "images/brewDetroitLogo.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -313,7 +313,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "detroitbeerco.png",
+			Logo: "images/detroitbeerco.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -323,7 +323,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "detroitbeerco.png",
+			Logo: "images/detroitbeerco.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -333,7 +333,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "detroitbeerco.png",
+			Logo: "images/detroitbeerco.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -343,7 +343,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "detroitbeerco.png",
+			Logo: "images/detroitbeerco.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -353,7 +353,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "detroitbeerco.png",
+			Logo: "images/detroitbeerco.png",
 			Type: "",
 			Description: "",
 			Flavor: "",

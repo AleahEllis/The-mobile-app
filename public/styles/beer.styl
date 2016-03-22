@@ -10,7 +10,6 @@ support-for-ie ?= true
         filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
 
 
-
 /* general page stylings */
 
 *
@@ -123,13 +122,14 @@ h3
 
 /* footer */
 footer
-	// display none
 	color white
 	text-align center
 	padding 2em
 	width 90%
 	margin-left auto
 	margin-right auto
+	bottom 0
+	position fixed
 
 footer a
 	color lighten(#438aa0, 50%)
