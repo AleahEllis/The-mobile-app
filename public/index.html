@@ -15,8 +15,7 @@
 		<div class="googleSignIn">
 			<meta name="google-signin-client_id" content="826946686188-d3i42eqj94937s3fb1nn4r078cn22j89.apps.googleusercontent.com">
 			<div class="g-signin2" data-onsuccess="onSignIn"></div>
-			<a href="#" onclick="signOut();">Sign out</a>
-			<img src="userImage" />
+			<a id="googleSignOut" href="#" onclick="signOut();">Sign out</a>
 		</div>
 	</div>
 
@@ -46,11 +45,11 @@
 			    
 			    <div class="generalInfo">
 			    	<h3>About your beer</h3>
-			    	<img src="images/g_logo_atwater.png" alt="" class="breweryLogo">
+			    	<img src="{{beer.Logo}}" alt="" class="breweryLogo">
 			    	<p><span>Name:</span> {{beer.Name}}</p>
 			    	<p><span>Brewery:</span> {{beer.Brewery}}</p>
 			    	<p><span>Type:</span> {{beer.Type}}</p>
-			    	<p><span>Description:</span> {{beer.Description}}</p>
+			    	<p id="beerDescription"><span>Description:</span> {{beer.Description}}</p>
 			    </div>
 
 		    	<div class="pairingInfo">

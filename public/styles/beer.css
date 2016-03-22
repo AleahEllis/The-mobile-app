@@ -66,8 +66,8 @@ h1 {
   font-weight: bold;
 }
 h3 {
-  margin-bottom: 20px;
-  color: #3c2415;
+  margin-bottom: 10px;
+  color: #e87d07;
   font-family: Rockwell;
 }
 /* brewery info in partial view */
@@ -77,6 +77,7 @@ h3 {
   display: block;
   border-bottom: 1px dotted #000;
   margin-bottom: 20px;
+  min-height: 160px;
 }
 .breweryLogo {
   width: 150px;
@@ -89,14 +90,12 @@ h3 {
   display: inline-block;
   width: 65%;
 }
-/* recipe links */
-a {
-  text-align: center;
+.pairingInfo a {
   text-decoration: none;
-  color: #000;
+  color: #366e80;
 }
-a:hover {
-  color: #e87d07;
+.pairingInfo a:hover {
+  color: #285360;
 }
 /* serving info in partial view */
 .servingInfo {

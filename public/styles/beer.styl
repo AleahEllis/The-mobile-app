@@ -78,8 +78,8 @@ h1
 	font-weight bold
 	
 h3 
-	margin-bottom 20px
-	color brownBMF
+	margin-bottom 10px
+	color orangeBMF
 	font-family Rockwell
 
 /* brewery info in partial view */
@@ -89,6 +89,7 @@ h3
 	display block
 	border-bottom 1px dotted black
 	margin-bottom 20px
+	min-height 160px
 
 .breweryLogo
 	width 150px
@@ -101,14 +102,12 @@ h3
 	display inline-block
 	width 65%
 
-/* recipe links */
-a 
-	text-align center
+.pairingInfo a
 	text-decoration none
-	color black
+	color darken(#438aa0, 20%)
 	
-a:hover
-	color orangeBMF	
+.pairingInfo a:hover
+	color darken(#438aa0, 40%)
 
 /* serving info in partial view */
 .servingInfo
