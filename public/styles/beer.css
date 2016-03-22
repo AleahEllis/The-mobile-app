@@ -111,15 +111,24 @@ h3 {
 }
 /* footer */
 footer {
-  display: none;
-  text-align: center;
   color: #fff;
-  font-size: 100%;
-  clear: both;
-  line-height: 2em;
+  text-align: center;
   padding: 2em;
-  bottom: 0;
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer a {
+  color: #9bc8d5;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #285360;
+  text-decoration: none;
+}
+.footer a {
+  color: #366e80;
+  text-decoration: none;
 }
 /* lightbox styling and functionality- some things we should not change */
 #contactFade {
@@ -135,15 +144,21 @@ footer {
   opacity: 0.7;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
+.icons {
+  width: 3%;
+}
+.headshots {
+  width: 30%;
+}
+.contactNames {
+  font-size: 2em;
+}
 #contact {
   display: none;
   position: fixed;
-  top: 45%;
-  left: 45%;
-  right: 45%;
-  bottom: 45%;
-  width: 4em;
-  height: 8em;
+  top: 20%;
+  left: 20%;
+  width: 60%;
   padding: 0.5em;
   border: 2px solid #fff;
   background: #ccc;
@@ -170,8 +185,6 @@ footer {
   top: 25%;
   left: 25%;
   right: 25%;
-  width: 40em;
-  height: 23em;
   padding: 0.5em;
   border: 2px solid #fff;
   background-color: #ccc;
