@@ -23,7 +23,8 @@ angular.module('beerApp')
 	// waits until beer has been selected to show partial view
 	// then kicks off getRecipes function
 	$scope.showBeerInfo = function(){
-		document.getElementById('beerInfo').style.display = 'block';
+		var showBox = document.getElementById('beerInfo');
+		showBox.style.display = 'block';
 		var flavors = recipeService.getFlavor();
 		recipeService.getRecipes(flavors)
 		.then(function(response){

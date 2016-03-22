@@ -4,7 +4,8 @@
 	<!-- Stylesheet compiled with Stylus -->
 	<link rel="stylesheet" href="styles/beer.css">
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<link rel="shortcut icon" href="images/logo.png" type="image/png"/>
+	<title>Crafted: Beer Meets Food</title>
 </head>
 <body ng-app="beerApp">
 
@@ -102,39 +103,18 @@
 				<div id="about">
 					<p>
 						Crafted: Beer Meets Food is a city specific desktop and mobile friendly application. Interest in craft beer has exploded in recent years and as a result, specialty, small scale breweries have popped up in many major cities. Crafted allows the user to choose a local draft from local breweries and then pairs that choice brew with a recipie. Recipies are pulled from an external API based on each beer's custom flavor profile. The API returns three random, highly rated recipies which results in many unexpected but delicious beer/food pairings. Crafted: Beer Meets Food introduces the customer to local brews and food combinations that they may not have tried before, both expanding culinary horizons and nourishing local economies. The app is currently specific to downtown Detroit's thriving local breweries.
-					</p>
-								
+					</p>			
 				</div>
-			<div id="aboutFade" onClick="about_close();"></div>
-							
+			<div id="aboutFade" onClick="about_close();"></div>	
 		</span>   
   	</footer>
 
 	<!-- Angular libraries -->
-	<script src="scripts/libs/angular.min.js"></script>
-<!--
-	<script src="scripts/libs/angular-route.min.js"></script>
--->
-
-	<!-- router -->
-	<script src="scripts/routes.js"></script>
-
-	<!-- services -->
-	<script src="scripts/services/pairingService.js"></script>
-	<script src="scripts/services/recipeService.js"></script>	
-
-	<!-- controllers -->
-	<script src="scripts/controllers/mainController.js"></script>
-	<script src="scripts/controllers/pairingController.js"></script>	
-
-	<!--facebook API things-->
-<!--
-	<script data-require="angular.js@1.5.0" data-semver="1.5.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/angular-route.min.js"></script>
 	
-    <script data-require"angular.js@1.5.0" data-semver="1.5.0" src="http://rawgithub.com/Ciul/angular-facebook/master/lib/angular-facebook.js"></script>
-    
-    <script src="scripts/services/facebookService.js"></script>
--->
+	<!-- project JavaScript files -->
+	<script src="app.js"></script>
 
 </body>
 </html>

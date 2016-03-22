@@ -1,103 +1,103 @@
-angular.module('beerApp', ['facebook'])
-//.provider?
-.config(['FacebookProvider', function($FacebookProvider) {
-  var myAppId = '997377097020840';
-  $FacebookProvider.provider.init(myAppId);
-}])
+// angular.module('beerApp', ['facebook'])
+// //.provider?
+// .config(['FacebookProvider', function($FacebookProvider) {
+//   var myAppId = '997377097020840';
+//   $FacebookProvider.provider.init(myAppId);
+// }])
  
-.controller('FBController', [
-   '$scope',
-   '$timeout',
-   'Facebook',
-   function($scope, $timeout, Facebook){
+// .controller('FBController', [
+//    '$scope',
+//    '$timeout',
+//    'Facebook',
+//    function($scope, $timeout, Facebook){
 
-    $scope.user = {};
-    $scope.logged = false;
-    $scope.byebye = false;
-    $scope.salutation = false;
-    $scope.$watch(
-        function() {
-          return Facebook.isReady();
-        },
-        function(newVal) {
-          if (newVal)
-            $scope.facebookReady = true;
-        }
-    );
+//     $scope.user = {};
+//     $scope.logged = false;
+//     $scope.byebye = false;
+//     $scope.salutation = false;
+//     $scope.$watch(
+//         function() {
+//           return Facebook.isReady();
+//         },
+//         function(newVal) {
+//           if (newVal)
+//             $scope.facebookReady = true;
+//         }
+//     );
       
-    var userIsConnected = false;
+//     var userIsConnected = false;
       
-	Facebook.getLoginStatus(function(response) {
-		if (response.status == 'connected') {
-		  userIsConnected = true;
-		}
-	});
+// 	Facebook.getLoginStatus(function(response) {
+// 		if (response.status == 'connected') {
+// 		  userIsConnected = true;
+// 		}
+// 	});
       
-	$scope.IntentLogin = function() {
-		if(!userIsConnected) {
-		  $scope.login();
-		}
-	};
+// 	$scope.IntentLogin = function() {
+// 		if(!userIsConnected) {
+// 		  $scope.login();
+// 		}
+// 	};
       
-	$scope.login = function() {
-	 	Facebook.login(function(response) {
-	  		if (response.status == 'connected') {
-			    $scope.logged = true;
-			    $scope.me();
-	  		}
-		});
-	};
+// 	$scope.login = function() {
+// 	 	Facebook.login(function(response) {
+// 	  		if (response.status == 'connected') {
+// 			    $scope.logged = true;
+// 			    $scope.me();
+// 	  		}
+// 		});
+// 	};
        
-	$scope.me = function() {
-	  	Facebook.api('/me', function(response) {
-	    	$scope.$apply(function() {
-	      		$scope.user = response;
-	    	});
-	  	});
-	};
+// 	$scope.me = function() {
+// 	  	Facebook.api('/me', function(response) {
+// 	    	$scope.$apply(function() {
+// 	      		$scope.user = response;
+// 	    	});
+// 	  	});
+// 	};
       
-	$scope.logout = function() {
-		Facebook.logout(function() {
-	  		$scope.$apply(function() {
-			    $scope.user   = {};
-			    $scope.logged = false;  
-	  		});
-		});
-	}
+// 	$scope.logout = function() {
+// 		Facebook.logout(function() {
+// 	  		$scope.$apply(function() {
+// 			    $scope.user   = {};
+// 			    $scope.logged = false;  
+// 	  		});
+// 		});
+// 	}
       
-	$scope.$on('Facebook:statusChange', function(ev, data) {
-		console.log('Status: ', data);
-		if (data.status == 'connected') {
-	  		$scope.$apply(function() {
-			    $scope.salutation = true;
-			    $scope.byebye     = false;    
-	  		});
-		} else {
-	  		$scope.$apply(function() {
-			    $scope.salutation = false;
-			    $scope.byebye     = true;
-			    //}
-		    	$timeout(function() {
-			      	$scope.byebye = false;
-			    	}, 2000)
-	  			});//}:
-		};
+// 	$scope.$on('Facebook:statusChange', function(ev, data) {
+// 		console.log('Status: ', data);
+// 		if (data.status == 'connected') {
+// 	  		$scope.$apply(function() {
+// 			    $scope.salutation = true;
+// 			    $scope.byebye     = false;    
+// 	  		});
+// 		} else {
+// 	  		$scope.$apply(function() {
+// 			    $scope.salutation = false;
+// 			    $scope.byebye     = true;
+// 			    //}
+// 		    	$timeout(function() {
+// 			      	$scope.byebye = false;
+// 			    	}, 2000)
+// 	  			});//}:
+// 		};
 
-	});
+// 	});
 
-}]) // end of controller
+// }]) // end of controller
 
-.directive('debug', function() {
-    return {
-      restrict: 'E',
-      scope: {
-        expression: '=val'
-      },
-      template: '<pre>{{debug(expression)}}</pre>',
-      link: function(scope) {
-        scope.debug = function(exp) {
-          return angular.toJson(exp, true);
-        };
-      }
-    };
-}); // end of directive
+// .directive('debug', function() {
+//     return {
+//       restrict: 'E',
+//       scope: {
+//         expression: '=val'
+//       },
+//       template: '<pre>{{debug(expression)}}</pre>',
+//       link: function(scope) {
+//         scope.debug = function(exp) {
+//           return angular.toJson(exp, true);
+//         };
+//       }
+//     };
+// }); // end of directive
