@@ -1,14 +1,14 @@
 var gulp   = require('gulp'),
-    stylus = require('gulp-stylus'),
+    // stylus = require('gulp-stylus'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
 // automagically compiles Stylus file into CSS
-gulp.task('stylus', function () { 
-  return gulp.src('styles/beer.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('styles'));
-});
+// gulp.task('stylus', function () { 
+//   return gulp.src('styles/beer.styl')
+//     .pipe(stylus())
+//     .pipe(gulp.dest('styles'));
+// });
 
 // concats and minifies all JS files into one
 gulp.task('js', function() { 

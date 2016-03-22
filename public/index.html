@@ -11,6 +11,11 @@
 
 	<div class="header">
 		<img src="images/logo.png" id="logo" alt="">
+				<!--google log in stuff -->
+		<meta name="google-signin-client_id" content="826946686188-d3i42eqj94937s3fb1nn4r078cn22j89.apps.googleusercontent.com">
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+		<a href="#" onclick="signOut();">Sign out</a>
+		<img src="userImage" />
 	</div>
 
 	<div class="container">
@@ -52,6 +57,7 @@
 
 		</div> <!-- end of mainController -->
 		
+
 		<!-- Facebook stuff -->		 
 
 <!--
@@ -115,6 +121,8 @@
 	
 	<!-- project JavaScript files -->
 	<script src="app.js"></script>
+	<!-- google sign in library -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 </html>
