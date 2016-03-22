@@ -11,11 +11,13 @@
 
 	<div class="header">
 		<img src="images/logo.png" id="logo" alt="">
-				<!--google log in stuff -->
-		<meta name="google-signin-client_id" content="826946686188-d3i42eqj94937s3fb1nn4r078cn22j89.apps.googleusercontent.com">
-		<div class="g-signin2" data-onsuccess="onSignIn"></div>
-		<a href="#" onclick="signOut();">Sign out</a>
-		<img src="userImage" />
+		<!--google log in stuff -->
+		<div class="googleSignIn">
+			<meta name="google-signin-client_id" content="826946686188-d3i42eqj94937s3fb1nn4r078cn22j89.apps.googleusercontent.com">
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+			<a href="#" onclick="signOut();">Sign out</a>
+			<img src="userImage" />
+		</div>
 	</div>
 
 	<div class="container">
@@ -41,18 +43,33 @@
 
 			<!-- pairingController nested inside mainController -->
 		    <div ng-controller="pairingController" class='views' id="beerInfo">
-		    	<p><span>Name:</span> {{beer.Name}}</p>
-		    	<p><span>Brewery:</span> {{beer.Brewery}}</p>
-		    	<p><span>Type:</span> {{beer.Type}}</p>
-		    	<p><span>Description:</span> {{beer.Description}}</p>
-		    	<p><span>Glass:</span> {{beer.Glass}}</p>		    	
-		    	<p><span>Temperature:</span> {{beer.Temperature}}</p>
-		    	<p><span>Try this recipe with your beer:</span> 
+			    
+			    <div class="generalInfo">
+			    	<h3>About your beer</h3>
+			    	<img src="images/g_logo_atwater.png" alt="" class="breweryLogo">
+			    	<p><span>Name:</span> {{beer.Name}}</p>
+			    	<p><span>Brewery:</span> {{beer.Brewery}}</p>
+			    	<p><span>Type:</span> {{beer.Type}}</p>
+			    	<p><span>Description:</span> {{beer.Description}}</p>
+			    </div>
+
+		    	<div class="pairingInfo">
+		    		<h3>Perfect pairings</h3>
+			    	<p><span>Try these recipes with your beer:</span> 
 			    	<ul>
 			    		<li><a target="blank" href="{{recipeArray[0].url}}">{{recipeArray[0].title}}</a></li>
 			    		<li><a target="blank" href="{{recipeArray[1].url}}">{{recipeArray[1].title}}</a></li>
 			    		<li><a target="blank" href="{{recipeArray[2].url}}">{{recipeArray[2].title}}</a></li>	
 			    	</ul>
+				</div>
+
+			    <div class="servingInfo">
+			    	<h3>Serving</h3>
+			    	<img src="images/becker.png" class="beerGlass">
+			    	<p><span>Glass:</span> {{beer.Glass}}</p>
+			    	<p><span>Temperature:</span><br /> {{beer.Temperature}}</p>
+		    	</div>
+
 			</div>
 
 		</div> <!-- end of mainController -->
@@ -85,13 +102,12 @@
 
 <!-- footer with lightboxes-->
 	<footer> 
-		<span>
 <!-- Maak Productions - we should add a something silly like a group selfie or location info-->
-			&#169;MAAK productions | 
+			<p class="footer"> &#169; 2016 MAAK productions</p>
 
-<!-- Contact brings up all of our emails-->
+<!-- Contact brings up all of our emails -->
 					
-			<a href="#" onclick="contact_open();">Contact</a>
+			<a href="#" onclick="contact_open();">Contact</a> |
 				<div id="contact">
 					<a href="mailto:msandula@gmail.com">Mike</a>
 					<a href="mailto:email">Aubrie</a>
@@ -100,10 +116,6 @@
 				</div>
 			<div id="contactFade" onClick="contact_close();"></div>
 				
-<!-- API documentation -->
-
-			 | API documentation | 
-
 	<!-- About the App lightbox-->		 
 			<a href="#" onclick="about_open();">About The App</a>
 				<div id="about">
@@ -111,8 +123,7 @@
 						Crafted: Beer Meets Food is a city specific desktop and mobile friendly application. Interest in craft beer has exploded in recent years and as a result, specialty, small scale breweries have popped up in many major cities. Crafted allows the user to choose a local draft from local breweries and then pairs that choice brew with a recipie. Recipies are pulled from an external API based on each beer's custom flavor profile. The API returns three random, highly rated recipies which results in many unexpected but delicious beer/food pairings. Crafted: Beer Meets Food introduces the customer to local brews and food combinations that they may not have tried before, both expanding culinary horizons and nourishing local economies. The app is currently specific to downtown Detroit's thriving local breweries.
 					</p>			
 				</div>
-			<div id="aboutFade" onClick="about_close();"></div>	
-		</span>   
+			<div id="aboutFade" onClick="about_close();"></div>	 
   	</footer>
 
 	<!-- Angular libraries -->

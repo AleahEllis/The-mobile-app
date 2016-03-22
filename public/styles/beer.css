@@ -7,9 +7,12 @@
   display: block;
   margin: 0 auto;
 }
+.googleSignIn {
+  display: none;
+}
 body {
   font-family: Verdana;
-  background-color: #00f;
+  background-color: #438aa0;
 }
 .container {
   width: 80%;
@@ -18,7 +21,7 @@ body {
 /* header */
 .header {
   width: 100%;
-  background-color: #907024;
+  background-color: #438aa0;
   padding: 5px 0;
   margin: 0;
 }
@@ -27,21 +30,6 @@ h1 {
   color: #fff;
   font-size: 50px;
 }
-a {
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-}
-/*diff colors obviously*/
-a:link {
-  color: #a52a2a;
-}
-a:visited {
-  color: dark-grey;
-}
-a:hover {
-  color: #808080;
-}
 /* dropdown menus */
 .dropdowns {
   margin: 40px 0px;
@@ -49,7 +37,7 @@ a:hover {
 .brewMenu {
   color: #000;
   font-size: 19px;
-  background-color: #eedfbb;
+  background-color: #e5edef;
   width: 49%;
   height: 40px;
   border: 0px;
@@ -59,13 +47,13 @@ a:hover {
 #beerDropdown {
   float: right;
 }
-.brewMenuhover {
+.brewMenu:hover {
   cursor: pointer;
-  background-color: #e3c98d;
+  background-color: #abc5cb;
 }
 /* styles for partial view */
 .views {
-  background-color: #d1a949;
+  background-color: #e5edef;
   padding: 20px;
   border-radius: 5px;
   display: none;
@@ -77,8 +65,54 @@ a:hover {
 #beerInfo span {
   font-weight: bold;
 }
+h3 {
+  margin-bottom: 20px;
+  color: #3c2415;
+  font-family: Rockwell;
+}
+/* brewery info in partial view */
+.generalInfo {
+  width: 100%;
+  padding-bottom: 40px;
+  display: block;
+  border-bottom: 1px dotted #000;
+  margin-bottom: 20px;
+}
+.breweryLogo {
+  width: 150px;
+  float: left;
+  display: block;
+  margin-right: 20px;
+}
+/* pairing info in partial view */
+.pairingInfo {
+  display: inline-block;
+  width: 65%;
+}
+/* recipe links */
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #e87d07;
+}
+/* serving info in partial view */
+.servingInfo {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  padding-left: 20px;
+  border-left: 1px dotted #000;
+}
+.beerGlass {
+  width: 30%;
+  float: left;
+}
 /* footer */
 footer {
+  display: none;
   text-align: center;
   color: #fff;
   font-size: 100%;
