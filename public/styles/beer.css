@@ -130,6 +130,14 @@ footer a:hover {
   color: #366e80;
   text-decoration: none;
 }
+/* contact the developers pop-up */
+.contactMAAK {
+  display: inline;
+  float: left;
+}
+#even {
+  float: right;
+}
 /* lightbox styling and functionality- some things we should not change */
 #contactFade {
   display: none;
