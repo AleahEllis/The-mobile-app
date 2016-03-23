@@ -4,7 +4,6 @@ angular.module('beerApp')
 	var breweries = [
 		'Atwater Brewery', 
 		'Batch Brewing Company', 
-		'Brew Detroit', 
 		'Detroit Beer Company', 
 		'Motor City Brewing Works'
 	];
@@ -256,69 +255,57 @@ angular.module('beerApp')
 		}
 	]; // end of Batch array
 
-	var brew = [
-		{
-			Name: "",
-			Brewery: "Brew Detroit",
-			Logo: "images/brew.png",
-			Type: "",
-			Description: "",
-			Flavor: "",
-			Glass: "",
-			Temperature: ""
-		},
-		{
-			Name: "",
-			Brewery: "Brew Detroit",
-			Logo: "images/brew.png",
-			Type: "",
-			Description: "",
-			Flavor: "",
-			Glass: "",
-			Temperature: ""
-		},	
-		{
-			Name: "",
-			Brewery: "Brew Detroit",
-			Logo: "images/brew.png",
-			Type: "",
-			Description: "",
-			Flavor: "",
-			Glass: "",
-			Temperature: ""
-		},
-		{
-			Name: "",
-			Brewery: "Brew Detroit",
-			Logo: "images/brew.png",
-			Type: "",
-			Description: "",
-			Flavor: "",
-			Glass: "",
-			Temperature: ""
-		},
-		{
-			Name: "",
-			Brewery: "Brew Detroit",
-			Logo: "images/brew.png",
-			Type: "",
-			Description: "",
-			Flavor: "",
-			Glass: "",
-			Temperature: ""
-		}
-	]; // end of Brew array
-
 	var dbc = [
 		{
-			Name: "Riopelle Pale Ale",
+			Name: "Broadway Light",
 			Brewery: "Detroit Beer Company",
 			Logo: "images/detroit-beer.png",
-			Type: "Rye Pale Ale",
-			Description: "Named after Riopelle street in Detroit this dank American hop has a bite with a nice dry finish",
-			Flavor: "pumpernickel, smoked salmon, butter",
+			Type: "Light Ale",
+			Description: "A delicious light ale brewed to be refreshing and drinkable.",
+			Flavor: "orange peel, nori, Ponzu",
 			Glass: "Pint",
-			Temperature: "40-45°F"
+			Temperature: "45-50°F"
+		},
+		{
+			Name: "Broke Down Brown",
+			Brewery: "Detroit Beer Company",
+			Logo: "images/detroit-beer.png",
+			Type: "An ale with smooth delicious flavors of biscuit, caramel and toffee.",
+			Description: "An ale with smooth delicious flavors of biscuit, caramel and toffee.",
+			Flavor: "biscuit, butter, sugar",
+			Glass: "Pint",
+			Temperature: "45-50°F"
+		},
+		{
+			Name: "The Detroit Dwarf",
+			Brewery: "Detroit Beer Company",
+			Logo: "images/detroit-beer.png",
+			Type: "Altbier ",
+			Description: "Our classic Altbier style beer. Amber in color with a nice bite from German hops.",
+			Flavor: "wheat four, nuts, brown sugar",
+			Glass: "Stange",
+			Temperature: "45-50°F"
+		},
+		{
+			Name: "Drop da Mike",
+			Brewery: "Detroit Beer Company",
+			Logo: "images/detroit-beer.png",
+			Type: "Belgian",
+			Description: "A Belgian Dark Strong Ale brewed with Belgian candi syrup and a fantastic blend of dark character malts. Fermented with Belgian Ardennes yeast.",
+			Flavor: "raisen, walnut, citrus",
+			Glass: "Pint",
+			Temperature: "45-50°F"
+		},
+
+		{
+			Name: "John Hammond's Cane",
+			Brewery: "Detroit Beer Company",
+			Logo: "images/detroit-beer.png",
+			Type: "Amber Ale",
+			Description: "An American Amber Ale made with West Coast American hops.",
+			Flavor: "salt, green pepper, sausage",
+			Glass: "Pint",
+			Temperature: "45-50°F"
 		},
 		{
 			Name: "Little Wings Belgian Session",
@@ -341,56 +328,6 @@ angular.module('beerApp')
 			Temperature: "45-50°F"
 		},
 		{
-			Name: "Broadway Light",
-			Brewery: "Detroit Beer Company",
-			Logo: "images/detroit-beer.png",
-			Type: "Light Ale",
-			Description: "A delicious light ale brewed to be refreshing and drinkable.",
-			Flavor: "orange peel, nori, Ponzu",
-			Glass: "Pint",
-			Temperature: "45-50°F"
-		},
-		{
-			Name: "The Detroit Dwarf",
-			Brewery: "Detroit Beer Company",
-			Logo: "images/detroit-beer.png",
-			Type: "Altbier ",
-			Description: "Our classic Altbier style beer. Amber in color with a nice bite from German hops.",
-			Flavor: "wheat four, nuts, brown sugar",
-			Glass: "Stange",
-			Temperature: "45-50°F"
-		},
-			{
-			Name: "Drop da Mike",
-			Brewery: "Detroit Beer Company",
-			Logo: "images/detroit-beer.png",
-			Type: "Belgian",
-			Description: "A Belgian Dark Strong Ale brewed with Belgian candi syrup and a fantastic blend of dark character malts. Fermented with Belgian Ardennes yeast.",
-			Flavor: "raisen, walnut, citrus",
-			Glass: "Pint",
-			Temperature: "45-50°F"
-		},
-			{
-			Name: "John Hammond's Cane",
-			Brewery: "Detroit Beer Company",
-			Logo: "images/detroit-beer.png",
-			Type: "Amber Ale",
-			Description: "An American Amber Ale made with West Coast American hops.",
-			Flavor: "salt, green pepper, sausage",
-			Glass: "Pint",
-			Temperature: "45-50°F"
-		},
-		{
-			Name: "Broke Down Brown",
-			Brewery: "Detroit Beer Company",
-			Logo: "images/detroit-beer.png",
-			Type: "An ale with smooth delicious flavors of biscuit, caramel and toffee.",
-			Description: "An ale with smooth delicious flavors of biscuit, caramel and toffee.",
-			Flavor: "biscuit, butter, sugar",
-			Glass: "Pint",
-			Temperature: "45-50°F"
-		},
-		{
 			Name: "Marzen Lager",
 			Brewery: "Detroit Beer Company",
 			Logo: "images/detroit-beer.png",
@@ -400,6 +337,16 @@ angular.module('beerApp')
 			Glass: "Pint",
 			Temperature: "45-50°F"
 		},
+		{
+			Name: "Riopelle Pale Ale",
+			Brewery: "Detroit Beer Company",
+			Logo: "images/detroit-beer.png",
+			Type: "Rye Pale Ale",
+			Description: "Named after Riopelle street in Detroit this dank American hop has a bite with a nice dry finish",
+			Flavor: "pumpernickel, smoked salmon, butter",
+			Glass: "Pint",
+			Temperature: "40-45°F"
+		}
 	]; // end of DBC array
 
 	var mcbw = [
@@ -474,12 +421,9 @@ angular.module('beerApp')
 			return batch;
 		}
 		if (breweryChoice === breweries[2]) {
-			return brew;
-		}	
-		if (breweryChoice === breweries[3]) {
 			return dbc;
 		}
-		if (breweryChoice === breweries[4]) {
+		if (breweryChoice === breweries[3]) {
 			return mcbw;
 		}						
 	}
@@ -488,7 +432,6 @@ angular.module('beerApp')
 		breweries: breweries,
 		atwater: atwater,
 		batch: batch,
-		brew: brew,
 		dbc: dbc,
 		mcbw: mcbw,
 		selectBrewery: selectBrewery
