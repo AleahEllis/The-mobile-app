@@ -2,7 +2,7 @@ var gulp   = require('gulp'),
     stylus = require('gulp-stylus'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
-
+//gulp watch
 // automagically compiles Stylus file into CSS
 gulp.task('style', function () { 
   return gulp.src('./public/styles/beer.styl')
