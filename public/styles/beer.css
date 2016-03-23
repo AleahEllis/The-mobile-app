@@ -136,6 +136,13 @@ footer a:hover {
 }
 #even {
   float: right;
+  display: inline;
+  width: 50%;
+}
+#odd {
+  float: left;
+  display: inline;
+  width: 50%;
 }
 /* lightbox styling and functionality- some things we should not change */
 #contactFade {
@@ -152,10 +159,10 @@ footer a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
 .icons {
-  width: 3%;
+  width: 7%;
 }
 .headshots {
-  width: 30%;
+  width: 60%;
 }
 .contactNames {
   font-size: 2em;
@@ -163,9 +170,9 @@ footer a:hover {
 #contact {
   display: none;
   position: fixed;
-  top: 20%;
-  left: 20%;
-  width: 60%;
+  top: 5%;
+  left: 30%;
+  width: 40%;
   padding: 0.5em;
   border: 2px solid #fff;
   background: #ccc;
