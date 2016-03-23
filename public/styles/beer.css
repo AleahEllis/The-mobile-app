@@ -109,6 +109,15 @@ h3 {
   width: 30%;
   float: left;
 }
+#fbButton {
+  position: absolute;
+  left: 80%;
+}
+#twitterButton {
+  position: absolute;
+  left: 80%;
+  top: 54%;
+}
 /* footer */
 footer {
   color: #fff;
