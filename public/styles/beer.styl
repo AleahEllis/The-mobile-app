@@ -21,8 +21,6 @@ support-for-ie ?= true
 	margin 0 auto
 
 .googleSignIn
-	// display inline-block
-	// float right
 	display none
 	
 body 
@@ -260,3 +258,45 @@ footer a:hover
 .modalContent span:hover
 	cursor pointer
 	color #438aa0
+
+/* media queries */
+@media only screen and (max-width: 650px)
+	.brewMenu
+		width 100%
+		height 50px
+	.dropdowns 
+		margin-bottom 20px
+	#beerDropdown
+		float none
+	#logo 
+		width 60%
+	footer 
+		position static
+	.modalContent
+		width 80%
+		height 40%
+	#contact
+		width 80%
+		left 10%
+		right 10%
+	#about 
+		width 80%
+		left 10%
+		right 10%
+	.pairingInfo
+		width 100%
+		border-bottom 1px dotted black
+		display block 
+		padding-bottom 20px
+		margin-bottom 20px
+	.servingInfo
+		width 100%
+		display block
+		border none
+	.views 
+		height 100vh
+
+@media only screen and (max-width: 200px)
+	.breweryLogo
+		float none
+		width 100%

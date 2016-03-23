@@ -260,7 +260,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -270,7 +270,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -280,7 +280,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -406,7 +406,7 @@ angular.module('beerApp')
 		{
 			Name: "Bohemian Lager",
 			Brewery: "Motor City Brewing Works",
-			Logo: "images/motorcitylogo.png",
+			Logo: "images/motor-city.png",
 			Type: "American Pale Lager",
 			Description: "The finest hops, pure Detroit water and barley malt combine to bring you that rich crisp flavor that made Detroit famous.",
 			Flavor: "cracker, pepper, butter",
@@ -416,7 +416,7 @@ angular.module('beerApp')
 		{
 			Name: "Ghettoblaster",
 			Brewery: "Motor City Brewing Works",
-			Logo: "images/motorcitylogo.png",
+			Logo: "images/motor-city.png",
 			Type: "English Dark Mild Ale",
 			Description: 'The so-called "Beer You Can Hear" is an on-going documentation of the Detroit music scene.',
 			Flavor: "toast, toffee, caramel",
@@ -426,7 +426,7 @@ angular.module('beerApp')
 		{
 			Name: "Honey Porter",
 			Brewery: "Motor City Brewing Works",
-			Logo: "images/motorcitylogo.png",
+			Logo: "images/motor-city.png",
 			Type: "American Porter",
 			Description: "A touch of pure Michigan clover honey adds a subtle sweetness to this smooth, well balanced ale.",
 			Flavor: "cocoa, honey, grilled",
@@ -436,7 +436,7 @@ angular.module('beerApp')
 		{
 			Name: "India Pale Ale",
 			Brewery: "Motor City Brewing Works",
-			Logo: "images/motorcitylogo.png",
+			Logo: "images/motor-city.png",
 			Type: "American IPA",
 			Description: "Brewed for 120 minutes to extract the fruity tartness from Warrior, Columbus and Simcoe hops",
 			Flavor: "tart, coffee, lemon",
@@ -446,7 +446,7 @@ angular.module('beerApp')
 		{
 			Name: "Motor City Pale Ale",
 			Brewery: "Motor City Brewing Works",
-			Logo: "images/motorcitylogo.png",
+			Logo: "images/motor-city.png",
 			Type: "American Pale Ale",
 			Description: "Motor City Brewing Works' first beer; a classic example of a true American style Pale.",
 			Flavor: "citrus, vanilla, soy",
@@ -456,7 +456,7 @@ angular.module('beerApp')
 		{
 			Name: "Nut Brown Ale",
 			Brewery: "Motor City Brewing Works",
-			Logo: "images/motorcitylogo.png",
+			Logo: "images/motor-city.png",
 			Type: "English Brown Ale",
 			Description: "Motor City Nut Brown Ale has a wonderful toasted nutty character and malty nose.",
 			Flavor: "grape, nut, cheese",
