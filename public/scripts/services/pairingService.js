@@ -16,9 +16,9 @@ angular.module('beerApp')
 			Type:"Strong Brown Chocolate Ale",
 			Description:"Nutty, round mouthfeel with an a blend of chocolate extract added for a rich, not-too-sweet mellow flavor profile.",
 			Flavor: "stilton, barbecue, chocolate",
-	        	Glass:"Nonic",
-            		glassImg:"/images/nonic-xdk.png",
-	        	Temperature:"50-55°F"
+            Glass:"Nonic",
+            glassImg:"/images/nonic-xdk.png",
+            Temperature:"50-55°F"
 		},
 		{ //1
 			Name:"Detroit Pale Ale",
@@ -127,155 +127,155 @@ angular.module('beerApp')
 			Name:"1400 Porter",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"English Porter",
+            Type:"English Porter",
 			Description:"English style robust porter, roasted malt character, with caramel malt undertones.",
-	        	Flavor:"grilled, gruyere, caramel",
-        		Glass:"Pint",
-            		glassImg:"/images/pint-dk.png",
-	        	Temperature:"50-55°F"
+            Flavor:"grilled, gruyere, caramel",
+            Glass:"Pint",
+            glassImg:"/images/pint-dk.png",
+            Temperature:"50-55°F"
 		},
 		{ //1
 			Name:"Anton's Animal's II",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Berliner Weisse",
+            Type:"Berliner Weisse",
 			Description:"Refreshing, tart, sour and acidic, with a lemony-citric fruit sharpness and almost no hop bitterness.",
-	        	Flavor:"ham, gouda, mushroom",
-            		Glass:"Nonic",
-            		glassImg:"/images/nonic-md.png",
-	        	Temperature:"45-50°F"
+            Flavor:"ham, gouda, mushroom",
+            Glass:"Nonic",
+            glassImg:"/images/nonic-md.png",
+	       Temperature:"45-50°F"
 		},
 		{ //2
 			Name:"Antwerp's Placebo II",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Belgian Dark Strong Ale",
+            Type:"Belgian Dark Strong Ale",
 			Description:"A big beautiful Belgian ale. Special bottle release on our 1 year anniversary!",
-	        	Flavor:"blueberry, barbecue, anise",
-            		Glass:"Snifter",
-            		glassImg:"/images/snifter-dk.png",
-	        	Temperature:"45-50°F"
+            Flavor:"blueberry, barbecue, anise",
+            Glass:"Snifter",
+            glassImg:"/images/snifter-dk.png",
+            Temperature:"45-50°F"
 		},	
 		{ //3
 			Name:"Empire Pale Ale",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"American Pale Ale",
+            Type:"American Pale Ale",
 			Description:"Featuring Michigan grown Empire Hops. Light and crisp with a nice floral/fruity finish.",
-	        	Flavor:"lavender, sage, roast",
-            		Glass:"Becker",
-            		glassImg:"/images/becker-lt.png",
-	        	Temperature:"40-45°F"
+            Flavor:"lavender, sage, roast",
+            Glass:"Becker",
+            glassImg:"/images/becker-lt.png",
+            Temperature:"40-45°F"
 		},
 		{ //4
 			Name:"High End Theory",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Black IPA",
+            Type:"Black IPA",
 			Description:"Low End Theory’s bigger brother.",
-	        	Flavor:"sharp, curry, pepperoni",
-            		Glass:"Becker",
-            		glassImg:"/images/bekcer-dk.png",
-	        	Temperature:"40-45°F"
+            Flavor:"sharp, curry, pepperoni",
+            Glass:"Becker",
+            glassImg:"/images/bekcer-dk.png",
+            Temperature:"40-45°F"
 		},
 		{ //5
 			Name:"Low End Theory",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Dark Black IPA",
+            Type:"Dark Black IPA",
 			Description:"Copious amounts of Michigan grown Chinook and Cascade hops.",
-	        	Flavor:"mushroom, figs, nut",
-            		Glass:"Becker",
-            		glassImg:"/images/becker-dk.png",
-	        	Temperature:"40-45°F"
+            Flavor:"mushroom, figs, nut",
+            Glass:"Becker",
+            glassImg:"/images/becker-dk.png",
+            Temperature:"40-45°F"
 		},
 		{ //6
 			Name:"Milk Goblin II",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Milk Stout",
+            Type:"Milk Stout",
 			Description:"Nice, creamy and roasty flavors.",
-	        	Flavor:"mushroom, cream, nut",
-            		Glass:"Nonic",
-            		glassImg:"/images/nonic-md.png",
-	        	Temperature:"50-55°F"
+            Flavor:"mushroom, cream, nut",
+            Glass:"Nonic",
+            glassImg:"/images/nonic-md.png",
+            Temperature:"50-55°F"
 		},
 		{ //7
 			Name:"Ned the Wheat Wino",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Wheat Wine",
+            Type:"Wheat Wine",
 			Description:"Bready, oaky, alcohol heat characters. Good Times.",
-	        	Flavor:"smoked, chilli, peach",
-            		Glass:"Snifter",
-            		glassImg:"/images/snifter-dk.png",
-	        	Temperature:"45-50°F"
+            Flavor:"smoked, chilli, peach",
+            Glass:"Snifter",
+            glassImg:"/images/snifter-dk.png",
+            Temperature:"45-50°F"
 		},
 		{ //8
 			Name:"The Noive",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Kölsch",
+            Type:"Kölsch",
 			Description:"The Noive of some people! Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
-	        	Flavor:"filet,apricot,coriander",
-            		Glass:"Stange",
-            		glassImg:"/images/stange-md.png",
-	        	Temperature:"40-45°F"
+            Flavor:"filet,apricot,coriander",
+            Glass:"Stange",
+            glassImg:"/images/stange-md.png",
+            Temperature:"40-45°F"
 		},
 		{ //9
 			Name:"Old Witty Bastard II",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Belgian Witbier",
+            Type:"Belgian Witbier",
 			Description:"A delicious witbier featuring coriander and orange peel. Yum!",
-	        	Flavor:"cumin, orange, cilantro",
-            		Glass:"Pilsener",
-            		glassImg:"/images/pilsner-lt.png",
-	        	Temperature:"45-50°F"
+            Flavor:"cumin, orange, cilantro",
+            Glass:"Pilsener",
+            glassImg:"/images/pilsner-lt.png",
+            Temperature:"45-50°F"
 		},
 		{ //10
 			Name:"Son of a Batch II",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Double IPA",
+            Type:"Double IPA",
 			Description:"Nicely balanced, brewed with cascade and centennial hops.",
-	        	Flavor:"salt, grilled, bacon",
-            		Glass:"Snifter",
-            		glassImg:"/images/snifter-dk.png",
-	        	Temperature:"50-55°F"
+            Flavor:"salt, grilled, bacon",
+            Glass:"Snifter",
+            glassImg:"/images/snifter-dk.png",
+            Temperature:"50-55°F"
 		},	
 		{ //11
 			Name:"Unrequited",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Belgian Sparkling Ale",
+            Type:"Belgian Sparkling Ale",
 			Description:"A dry/semi-dry sparkling ale featuring fruity and spicy fermentation character with low hop and low malt presence. It’s all about the Belgian yeast, baby!",
-	        	Flavor:"cloves, seafood",
-            		Glass:"Pint",
-            		glassImg:"/images/pint-lt.png",
-	        	Temperature:"45-50°F"
+            Flavor:"cloves, seafood",
+            Glass:"Pint",
+            glassImg:"/images/pint-lt.png",
+            Temperature:"45-50°F"
 		},
 		{ //12
 			Name:"Wheated Kölsch",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Wheat Kölsch",
+            Type:"Wheat Kölsch",
 			Description:"Light Refreshing Wheat/Kölsch Hybrid",
-	        	Flavor:"egg, gouda, crab",
-            		Glass:"Stange",
-            		glassImg:"/images/stange-lt.png",
-	        	Temperature:"40-45°F"
+            Flavor:"egg, gouda, crab",
+            Glass:"Stange",
+            glassImg:"/images/stange-lt.png",
+            Temperature:"40-45°F"
 		},
 		{ //12
 			Name:"Wheated Session IPA",
 			Brewery:"Batch Brewing Company",
 			Logo: "images/batch.png",
-	        	Type:"Wheat IPA",
+            Type:"Wheat IPA",
 			Description:"Dry hopped with Cascade and Centennial hops for intense hop aromatics.",
-	        	Flavor:"curry, barbecue, blue cheese",
-            		Glass:"Pint",
-            		glassImg:"/images/pint-md.png",
-	        	Temperature:"45-50°F"
+            Flavor:"curry, barbecue, blue cheese",
+            Glass:"Pint",
+            glassImg:"/images/pint-md.png",
+            Temperature:"45-50°F"
 		}
 	]; // end of Batch array
 
@@ -288,7 +288,7 @@ angular.module('beerApp')
 			Description: "A delicious light ale brewed to be refreshing and drinkable.",
 			Flavor: "orange peel, nori, Ponzu",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-lt.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -299,7 +299,7 @@ angular.module('beerApp')
 			Description: "An ale with smooth delicious flavors of biscuit, caramel and toffee.",
 			Flavor: "biscuit, butter, sugar",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-md.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -310,7 +310,7 @@ angular.module('beerApp')
 			Description: "Our classic Altbier style beer. Amber in color with a nice bite from German hops.",
 			Flavor: "wheat four, nuts, brown sugar",
 			Glass: "Stange",
-			glassImg:"",
+			glassImg:"images/stange-md.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -321,7 +321,7 @@ angular.module('beerApp')
 			Description: "A Belgian Dark Strong Ale brewed with Belgian candi syrup and a fantastic blend of dark character malts. Fermented with Belgian Ardennes yeast.",
 			Flavor: "raisen, walnut, citrus",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-dk.png",
 			Temperature: "45-50°F"
 		},
 
@@ -333,7 +333,7 @@ angular.module('beerApp')
 			Description: "An American Amber Ale made with West Coast American hops.",
 			Flavor: "salt, green pepper, sausage",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-lt.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -343,8 +343,8 @@ angular.module('beerApp')
 			Type: "Belgian Pale Ale",
 			Description: "A light and delightful Belgian style pale ale. A copper colored ale with Flavors of Dill, Clove, and Lemon",
 			Flavor: "Dill, Clove, Lemon",
-			Glass: "Chalice",
-			glassImg:"",
+			Glass: "Snifter",
+			glassImg:"images/snifter-lt.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -355,7 +355,7 @@ angular.module('beerApp')
 			Description: "An American IPA brewed with Columbus, Falconer’s Flight and Centennial hops.",
 			Flavor: "grapefruit, toast, rosewater",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-lt.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -366,7 +366,7 @@ angular.module('beerApp')
 			Description: "Similar to our Oktoberfest, a pale copper German-style lager.",
 			Flavor: "Ritz Crackers, honey, pepper",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-md.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -377,7 +377,7 @@ angular.module('beerApp')
 			Description: "Named after Riopelle street in Detroit this dank American hop has a bite with a nice dry finish",
 			Flavor: "pumpernickel, smoked salmon, butter",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-dk.png",
 			Temperature: "40-45°F"
 		}
 	]; // end of DBC array
@@ -391,7 +391,7 @@ angular.module('beerApp')
 			Description: "The finest hops, pure Detroit water and barley malt combine to bring you that rich crisp flavor that made Detroit famous.",
 			Flavor: "cracker, pepper, butter",
 			Glass: "Pilsner",
-			glassImg:"",
+			glassImg:"images/pilsner-dk.png",
 			Temperature: "40-45°F"
 		},
 		{
@@ -401,8 +401,8 @@ angular.module('beerApp')
 			Type: "English Dark Mild Ale",
 			Description: 'The so-called "Beer You Can Hear" is an on-going documentation of the Detroit music scene.',
 			Flavor: "toast, toffee, caramel",
-			Glass: "Seidel",
-			glassImg:"",
+			Glass: "Stein",
+			glassImg:"images/stein-dk.png",
 			Temperature: "50-55°F"
 		},
 		{
@@ -413,7 +413,7 @@ angular.module('beerApp')
 			Description: "A touch of pure Michigan clover honey adds a subtle sweetness to this smooth, well balanced ale.",
 			Flavor: "cocoa, honey, grilled",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-dk.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -424,7 +424,7 @@ angular.module('beerApp')
 			Description: "Brewed for 120 minutes to extract the fruity tartness from Warrior, Columbus and Simcoe hops",
 			Flavor: "tart, coffee, lemon",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-md.png",
 			Temperature: "45-50°F"
 		},
 		{
@@ -435,7 +435,7 @@ angular.module('beerApp')
 			Description: "Motor City Brewing Works' first beer; a classic example of a true American style Pale.",
 			Flavor: "citrus, vanilla, soy",
 			Glass: "Pint",
-			glassImg:"",
+			glassImg:"images/pint-lt.png",
 			Temperature: "45-50°F"
 		},	
 		{
@@ -445,8 +445,8 @@ angular.module('beerApp')
 			Type: "English Brown Ale",
 			Description: "Motor City Nut Brown Ale has a wonderful toasted nutty character and malty nose.",
 			Flavor: "grape, nut, cheese",
-			Glass: "Seidel",
-			glassImg:"",
+			Glass: "Snifter",
+			glassImg:"images/snifter-dk.png",
 			Temperature: "45-50°F"
 		}	
 	]; // end of MCBW array
