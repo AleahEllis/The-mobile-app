@@ -37,3 +37,18 @@ function about_close(){
     document.getElementById('about').style.display='none';
     document.getElementById('aboutFade').style.display='none';
 };
+
+
+// modal 
+var modal = document.getElementById('myModal');
+var yes = document.getElementById("yes");
+var no = document.getElementById("no");
+
+yes.onclick = function() {
+    modal.style.display = "none";
+}
+
+no.onclick = function() {
+    history.go(-1);
+    return false;
+}
