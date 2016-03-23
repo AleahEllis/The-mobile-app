@@ -213,6 +213,8 @@ footer a:hover {
   z-index: 1002;
   overflow: visible;
   bottom: 25%;
+}
+#about h3 {
   text-align: center;
 }
 /* 21+ modal */
