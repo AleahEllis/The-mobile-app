@@ -260,7 +260,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -270,7 +270,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -280,7 +280,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
