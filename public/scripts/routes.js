@@ -39,13 +39,11 @@ function about_close(){
 };
 
 
-
+// modal 
 var modal = document.getElementById('myModal');
 var yes = document.getElementById("yes");
 var no = document.getElementById("no");
 
-
-// When the user clicks on <span> (x), close the modal
 yes.onclick = function() {
     modal.style.display = "none";
 }
