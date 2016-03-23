@@ -28,6 +28,7 @@ angular.module('beerApp')
 	$scope.showBeerInfo = function(){
 		var showBox = document.getElementById('beerInfo');
 		showBox.style.display = 'block';
+		document.getElementById('footerPosition').style.position = 'static';
 		var flavors = recipeService.getFlavor();
 		recipeService.getRecipes(flavors)
 		.then(function(response){
@@ -50,9 +51,10 @@ angular.module('beerApp')
 		});
 	};
 
-	// hides beer info when no beer is selected
+	// hides beer info when no beer is selected & puts footer to buttom
 	$scope.hideBeerInfo = function() {
 		document.getElementById('beerInfo').style.display = 'none';
+		document.getElementById('footerPosition').style.position = 'fixed';
 	};
 
 }]);

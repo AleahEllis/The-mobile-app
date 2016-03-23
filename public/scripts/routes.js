@@ -37,22 +37,3 @@ function about_close(){
     document.getElementById('about').style.display='none';
     document.getElementById('aboutFade').style.display='none';
 };
-
-// footer is fixed on load, but becomes static on scroll
-window.addEventListener('scroll', function (evt) {
-
-  var footer = document.getElementById('footerPosition');
-  // This value is your scroll distance from the top
-  var distance_from_top = document.body.scrollTop;
-
-  // The user has scrolled to the tippy top of the page. Set appropriate style.
-  if (distance_from_top === 0) {
-  	footer.style.position = 'fixed';
-  }
-
-  // The user has scrolled down the page.
-  if(distance_from_top > 0) {
-  	footer.style.position = 'static';
-  }
-
-});
