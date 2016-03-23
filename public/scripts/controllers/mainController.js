@@ -3,7 +3,6 @@ angular.module('beerApp')
 	$scope.breweries    = pairingService.breweries;
 	$scope.atwater      = pairingService.atwater;
 	$scope.batch        = pairingService.batch;
-	$scope.brew         = pairingService.brew;
 	$scope.dbc          = pairingService.dbc;
 	$scope.mcbw         = pairingService.mcbw;
 	$scope.beerChoice   = pairingService.beerChoice;
