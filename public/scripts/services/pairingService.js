@@ -13,7 +13,7 @@ angular.module('beerApp')
 		{ //0
 			Name:"Decadent Dark Chocolate",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 			Type:"Strong Brown Chocolate Ale",
 			Description:"Nutty, round mouthfeel with an a blend of chocolate extract added for a rich, not-too-sweet mellow flavor profile.",
             Flavor: "stilton, barbecue, chocolate",
@@ -23,7 +23,7 @@ angular.module('beerApp')
 		{ //1
 			Name:"Detroit Pale Ale",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"Altbier",
 			Description:"A unique and diverse beer bringing in flavors from English and German malts.",
 	        Flavor:"gouda, pepper, smoked",
@@ -33,7 +33,7 @@ angular.module('beerApp')
 		{ //2
 			Name:"Dirty Blonde",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"Wheat Spiced Ale",
 			Description:"A beer with a pale golden hue, sweeter maltiness with light fruity notes. Crushed orange peel and coriander, clean heady aroma.",
             Flavor:"orange, chorizo, coriander",
@@ -43,7 +43,7 @@ angular.module('beerApp')
 		{ //3
 			Name:"D-light",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"Kölsch",
 			Description:"Clean, crisp and lightly floral.",
 	        Flavor:"greens, pear, nuts",
@@ -53,7 +53,7 @@ angular.module('beerApp')
 		{ //4
 			Name:"Grand Circus IPA",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"IPA",
 			Description:"Crisp, clean and hoppy, lightly bready with notes of citrus and caramel.",
 	        Flavor:"grapefruit, pepper, rosemary",
@@ -63,7 +63,7 @@ angular.module('beerApp')
 		{ //5
 			Name:"Hop-A-Peel",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"American IPA",
 			Description:"A Super Cascade of American and Chinook hops makes gives you a full IPA experience.",
 	        Flavor:"orange peel, cilantro, oil",
@@ -73,7 +73,7 @@ angular.module('beerApp')
 		{ //6
 			Name:"Michelada",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"Michelada",
 			Description:"Atwater Lager + Bloody Mary mix = party time.",
 	        Flavor:"celery, tomato, salt",
@@ -83,7 +83,7 @@ angular.module('beerApp')
 		{ //7
 			Name:"Purple Gang Pilsner",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"Czech Pilsener",
 			Description:"Lightly malty and subtly sweet.",
 	        Flavor:"rice, lemon, basil",
@@ -93,7 +93,7 @@ angular.module('beerApp')
 		{ //8
 			Name:"Vanilla Java Porter",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"English Porter Spiced Ale",
 			Description:"A copper cored porter with unmistakeable notes of vanilla and coffee. Brewed cold to eliminates burnt flavors.",
 	        Flavor:"mole, grilled, butter",
@@ -103,7 +103,7 @@ angular.module('beerApp')
 		{ //9
 			Name:"VooDoo Vator",
 			Brewery:"Atwater Brewery",
-			Logo: "images/g_logo_atwater.png",
+			Logo: "images/atwater.png",
 	        Type:"Doppelbock",
 			Description:"This exceptionally smooth caramel malt carries a crisp nutty flavor, along with a high dose of liquid courage.",
 	        Flavor:"camembert, roast, nut",
@@ -117,7 +117,7 @@ angular.module('beerApp')
 		{ //0
 			Name:"1400 Porter",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"English Porter",
 			Description:"English style robust porter, roasted malt character, with caramel malt undertones.",
 	        Flavor:"grilled, gruyere, caramel",
@@ -127,7 +127,7 @@ angular.module('beerApp')
 		{ //1
 			Name:"Anton's Animal's II",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Berliner Weisse",
 			Description:"Refreshing, tart, sour and acidic, with a lemony-citric fruit sharpness and almost no hop bitterness.",
 	        Flavor:"ham, gouda, mushroom",
@@ -137,7 +137,7 @@ angular.module('beerApp')
 		{ //2
 			Name:"Antwerp's Placebo II",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Belgian Dark Strong Ale",
 			Description:"A big beautiful Belgian ale. Special bottle release on our 1 year anniversary!",
 	        Flavor:"blueberry, barbecue, anise",
@@ -147,7 +147,7 @@ angular.module('beerApp')
 		{ //3
 			Name:"Empire Pale Ale",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"American Pale Ale",
 			Description:"Featuring Michigan grown Empire Hops. Light and crisp with a nice floral/fruity finish.",
 	        Flavor:"lavender, sage, roast",
@@ -157,7 +157,7 @@ angular.module('beerApp')
 		{ //4
 			Name:"High End Theory",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Black IPA",
 			Description:"Low End Theory’s bigger brother.",
 	        Flavor:"sharp, curry, pepperoni",
@@ -167,7 +167,7 @@ angular.module('beerApp')
 		{ //5
 			Name:"Low End Theory",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Dark Black IPA",
 			Description:"Copious amounts of Michigan grown Chinook and Cascade hops.",
 	        Flavor:"mushroom, figs, nut",
@@ -177,7 +177,7 @@ angular.module('beerApp')
 		{ //6
 			Name:"Milk Goblin II",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Milk Stout",
 			Description:"Nice, creamy and roasty flavors.",
 	        Flavor:"mushroom, cream, nut",
@@ -187,7 +187,7 @@ angular.module('beerApp')
 		{ //7
 			Name:"Ned the Wheat Wino",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Wheat Wine",
 			Description:"Bready, oaky, alcohol heat characters. Good Times.",
 	        Flavor:"smoked, chilli, peach",
@@ -197,7 +197,7 @@ angular.module('beerApp')
 		{ //8
 			Name:"The Noive",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Kölsch",
 			Description:"The Noive of some people! Delightful and refreshing. Nice and clean, easy drinking, and the right choice for anytime of the day!",
 	        Flavor:"filet,apricot,coriander",
@@ -207,7 +207,7 @@ angular.module('beerApp')
 		{ //9
 			Name:"Old Witty Bastard II",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Belgian Witbier",
 			Description:"A delicious witbier featuring coriander and orange peel. Yum!",
 	        Flavor:"cumin, orange, cilantro",
@@ -217,7 +217,7 @@ angular.module('beerApp')
 		{ //10
 			Name:"Son of a Batch II",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Double IPA",
 			Description:"Nicely balanced, brewed with cascade and centennial hops.",
 	        Flavor:"salt, grilled, bacon",
@@ -227,7 +227,7 @@ angular.module('beerApp')
 		{ //11
 			Name:"Unrequited",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Belgian Sparkling Ale",
 			Description:"A dry/semi-dry sparkling ale featuring fruity and spicy fermentation character with low hop and low malt presence. It’s all about the Belgian yeast, baby!",
 	        Flavor:"cloves, seafood",
@@ -237,7 +237,7 @@ angular.module('beerApp')
 		{ //12
 			Name:"Wheated Kölsch",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Wheat Kölsch",
 			Description:"Light Refreshing Wheat/Kölsch Hybrid",
 	        Flavor:"egg, gouda, crab",
@@ -247,7 +247,7 @@ angular.module('beerApp')
 		{ //12
 			Name:"Wheated Session IPA",
 			Brewery:"Batch Brewing Company",
-			Logo: "images/batch-brewing-logo-web.png",
+			Logo: "images/batch.png",
 	        Type:"Wheat IPA",
 			Description:"Dry hopped with Cascade and Centennial hops for intense hop aromatics.",
 	        Flavor:"curry, barbecue, blue cheese",
@@ -290,7 +290,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -300,7 +300,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Brew Detroit",
-			Logo: "images/brewDetroitLogo.png",
+			Logo: "images/brew.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -313,7 +313,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "images/detroitbeerco.png",
+			Logo: "images/detroit-beer.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -323,7 +323,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "images/detroitbeerco.png",
+			Logo: "images/detroit-beer.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -333,7 +333,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "images/detroitbeerco.png",
+			Logo: "images/detroit-beer.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -343,7 +343,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "images/detroitbeerco.png",
+			Logo: "images/detroit-beer.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
@@ -353,7 +353,7 @@ angular.module('beerApp')
 		{
 			Name: "",
 			Brewery: "Detroit Beer Company",
-			Logo: "images/detroitbeerco.png",
+			Logo: "images/detroit-beer.png",
 			Type: "",
 			Description: "",
 			Flavor: "",
