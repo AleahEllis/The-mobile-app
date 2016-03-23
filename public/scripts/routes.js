@@ -37,3 +37,20 @@ function about_close(){
     document.getElementById('about').style.display='none';
     document.getElementById('aboutFade').style.display='none';
 };
+
+
+
+var modal = document.getElementById('myModal');
+var yes = document.getElementById("yes");
+var no = document.getElementById("no");
+
+
+// When the user clicks on <span> (x), close the modal
+yes.onclick = function() {
+    modal.style.display = "none";
+}
+
+no.onclick = function() {
+    history.go(-1);
+    return false;
+}
