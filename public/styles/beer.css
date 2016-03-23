@@ -114,9 +114,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 2em;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   bottom: 0;
   position: fixed;
 }
@@ -125,12 +123,11 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: #285360;
+  color: #5fa6bc;
   text-decoration: none;
 }
-.footer a {
-  color: #366e80;
-  text-decoration: none;
+#footerPosition {
+  padding: 20px 0px;
 }
 /* contact the developers pop-up */
 .contactMAAK {
