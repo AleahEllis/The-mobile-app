@@ -109,14 +109,14 @@ h3 {
   width: 30%;
   float: left;
 }
-#fbButton {
-  position: absolute;
-  left: 80%;
+.twitter-share-button {
+  display: block;
+  padding-top: 2%;
 }
-#twitterButton {
+#socialButtons {
   position: absolute;
   left: 80%;
-  top: 54%;
+  width: 20%;
 }
 /* footer */
 footer {
@@ -307,6 +307,11 @@ footer a:hover {
   }
   .views {
     height: 100vh;
+  }
+  #socialButtons {
+    position: absolute;
+    top: 90%;
+    margin-right: 5%;
   }
 }
 @media only screen and (max-width: 200px) {

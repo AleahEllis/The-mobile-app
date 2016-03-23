@@ -8,18 +8,19 @@
 	<title>Crafted: Beer Meets Food</title>
 </head>
 <body ng-app="beerApp">
-	<div id="fb-root"></div>
+
 	
 	<!-- for the fb share button -->
-	<script>
-	(function(d, s, id) {
-  		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
-  		fjs.parentNode.insertBefore(js, fjs);
+	<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+	  		var js, fjs = d.getElementsByTagName(s)[0];
+	  		if (d.getElementById(id)) return;
+	  		js = d.createElement(s); js.id = id;
+	  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=997377097020840";
+	  		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-	</script>
+		</script>
 
 	<!-- for the twitter button -->
 	<script>
@@ -57,9 +58,13 @@
 			    
 			    <div class="generalInfo">
 
-			    	<div id="fbButton" class="fb-share-button" data-href="https://beermeetsfood.us" data-layout="button_count"></div>
+			    	<div id="socialButtons">
+				    	<div class="fb-share-button" data-href="https://beermeetsfood.us" data-layout="button"></div>
 
-			    	<div id="twitterButton"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!">Tweet</a></div>
+				    	
+				    	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!">Tweet</a>
+				    	
+				    </div>
 			    	
 
 			    	<h3>About your beer</h3>
