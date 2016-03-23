@@ -17,6 +17,7 @@ angular.module('beerApp')
 			Description:"Nutty, round mouthfeel with an a blend of chocolate extract added for a rich, not-too-sweet mellow flavor profile.",
             Flavor: "stilton, barbecue, chocolate",
 	        Glass:"Nonic",
+            glassImg:"/images/nonic-xdk.png",
 	        Temperature:"50-55°F"
 		},
 		{ //1
@@ -26,7 +27,8 @@ angular.module('beerApp')
 	        Type:"Altbier",
 			Description:"A unique and diverse beer bringing in flavors from English and German malts.",
 	        Flavor:"gouda, pepper, smoked",
-            Glass:"Becker",
+            Glass:"Stange",
+            glassImg:"/images/stange-md.png",
 	        Temperature:"40-45°F"
 		},
 		{ //2
@@ -36,7 +38,8 @@ angular.module('beerApp')
 	        Type:"Wheat Spiced Ale",
 			Description:"A beer with a pale golden hue, sweeter maltiness with light fruity notes. Crushed orange peel and coriander, clean heady aroma.",
             Flavor:"orange, chorizo, coriander",
-            Glass:"Stein",
+            Glass:"Pint",
+            glassImg:"/images/pint-lt.png",
 	        Temperature:"48-50°F"
 		},			
 		{ //3
@@ -47,16 +50,18 @@ angular.module('beerApp')
 			Description:"Clean, crisp and lightly floral.",
 	        Flavor:"greens, pear, nuts",
             Glass:"Stange",
+            glassImg:"/images/stange-lt.png",
 	        Temperature:"40-45°F"
 		},
 		{ //4
 			Name:"Grand Circus IPA",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        Type:"IPA",
+	        Type:"American IPA",
 			Description:"Crisp, clean and hoppy, lightly bready with notes of citrus and caramel.",
 	        Flavor:"grapefruit, pepper, rosemary",
-            Glass:"Seidel",
+            Glass:"Pint",
+            glassImg:"/images/pint-md.png",
 	        Temperature:"45-50°F"
 		},
 		{ //5
@@ -66,7 +71,8 @@ angular.module('beerApp')
 	        Type:"American IPA",
 			Description:"A Super Cascade of American and Chinook hops makes gives you a full IPA experience.",
 	        Flavor:"orange peel, cilantro, oil",
-            Glass:"Seidel",
+            Glass:"Snifter",
+            glassImg:"/images/snifter-md.png",
 	        Temperature:"45-50°F"
 		},
 		{ //6
@@ -76,7 +82,8 @@ angular.module('beerApp')
 	        Type:"Michelada",
 			Description:"Atwater Lager + Bloody Mary mix = party time.",
 	        Flavor:"celery, tomato, salt",
-            Glass:"Becker",
+            Glass:"Pint",
+            glassImg:"/images/pint-md.png",
 	        Temperature:"40-45°F"
 		},
 		{ //7
@@ -86,7 +93,8 @@ angular.module('beerApp')
 	        Type:"Czech Pilsener",
 			Description:"Lightly malty and subtly sweet.",
 	        Flavor:"rice, lemon, basil",
-            Glass:"Flute",
+            Glass:"Pilsener",
+            glassImg:"/images/pilsner-lt.png",
 	        Temperature:"40-45°F"
 		},
 		{ //8
@@ -97,6 +105,7 @@ angular.module('beerApp')
 			Description:"A copper cored porter with unmistakeable notes of vanilla and coffee. Brewed cold to eliminates burnt flavors.",
 	        Flavor:"mole, grilled, butter",
             Glass:"Pint",
+            glassImg:"/images/pint-dk.png",
 	        Temperature:"50-55°F"
 		},
 		{ //9
@@ -107,6 +116,7 @@ angular.module('beerApp')
 			Description:"This exceptionally smooth caramel malt carries a crisp nutty flavor, along with a high dose of liquid courage.",
 	        Flavor:"camembert, roast, nut",
             Glass:"Pilsener",
+            glassImg:"/images/pilsner-dk.png",
 	        Temperature:"45-50°F"
 		}
 	]; // end of Atwater array
