@@ -26,98 +26,98 @@ angular.module('beerApp')
 			Logo: "images/atwater.png",
 			Type:"Altbier",
 			Description:"A unique and diverse beer bringing in flavors from English and German malts.",
-	        	Flavor:"gouda, pepper, smoked",
-            		Glass:"Stange",
-            		glassImg:"/images/stange-md.png",
-	        	Temperature:"40-45°F"
+	        Flavor:"gouda, pepper, smoked",
+            Glass:"Stange",
+            glassImg:"/images/stange-md.png",
+	        Temperature:"40-45°F"
 		},
 		{ //2
 			Name:"Dirty Blonde",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"Wheat Spiced Ale",
+	        Type:"Wheat Spiced Ale",
 			Description:"A beer with a pale golden hue, sweeter maltiness with light fruity notes. Crushed orange peel and coriander, clean heady aroma.",
-            		Flavor:"orange, chorizo, coriander",
-            		Glass:"Pint",
-            		glassImg:"/images/pint-lt.png",
-	        	Temperature:"48-50°F"
+            Flavor:"orange, chorizo, coriander",
+            Glass:"Pint",
+            glassImg:"/images/pint-lt.png",
+	        Temperature:"48-50°F"
 		},			
 		{ //3
 			Name:"D-light",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"Kölsch",
+	        Type:"Kölsch",
 			Description:"Clean, crisp and lightly floral.",
-	        	Flavor:"greens, pear, nuts",
-            		Glass:"Stange",
-            		glassImg:"/images/stange-lt.png",
-	        	Temperature:"40-45°F"
+	        Flavor:"greens, pear, nuts",
+            Glass:"Stange",
+            glassImg:"/images/stange-lt.png",
+	        Temperature:"40-45°F"
 		},
 		{ //4
 			Name:"Grand Circus IPA",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"American IPA",
+	        Type:"American IPA",
 			Description:"Crisp, clean and hoppy, lightly bready with notes of citrus and caramel.",
-	        	Flavor:"grapefruit, pepper, rosemary",
-		        Glass:"Pint",
-            		glassImg:"/images/pint-md.png",
-	        	Temperature:"45-50°F"
+	        Flavor:"grapefruit, pepper, rosemary",
+			Glass:"Pint",
+            glassImg:"/images/pint-md.png",
+	        Temperature:"45-50°F"
 		},
 		{ //5
 			Name:"Hop-A-Peel",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"American IPA",
+	        Type:"American IPA",
 			Description:"A Super Cascade of American and Chinook hops makes gives you a full IPA experience.",
-	        	Flavor:"orange peel, cilantro, oil",
-        		Glass:"Snifter",
-            		glassImg:"/images/snifter-md.png",
-	        	Temperature:"45-50°F"
+	        Flavor:"orange peel, cilantro, oil",
+        	Glass:"Snifter",
+            glassImg:"/images/snifter-md.png",
+	        Temperature:"45-50°F"
 		},
 		{ //6
 			Name:"Michelada",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"Michelada",
+	        Type:"Michelada",
 			Description:"Atwater Lager + Bloody Mary mix = party time.",
-	        	Flavor:"celery, tomato, salt",
-            		Glass:"Pint",
-            		glassImg:"/images/pint-md.png",
-	        	Temperature:"40-45°F"
+	        Flavor:"celery, tomato, salt",
+            Glass:"Pint",
+            glassImg:"/images/pint-md.png",
+	        Temperature:"40-45°F"
 		},
 		{ //7
 			Name:"Purple Gang Pilsner",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"Czech Pilsener",
+	        Type:"Czech Pilsener",
 			Description:"Lightly malty and subtly sweet.",
-	        	Flavor:"rice, lemon, basil",
-            		Glass:"Pilsener",
-            		glassImg:"/images/pilsner-lt.png",
-	        	Temperature:"40-45°F"
+	        Flavor:"rice, lemon, basil",
+            Glass:"Pilsener",
+            glassImg:"/images/pilsner-lt.png",
+	        Temperature:"40-45°F"
 		},
 		{ //8
 			Name:"Vanilla Java Porter",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"English Porter Spiced Ale",
+	        Type:"English Porter Spiced Ale",
 			Description:"A copper cored porter with unmistakeable notes of vanilla and coffee. Brewed cold to eliminates burnt flavors.",
 			Flavor:"mole, grilled, butter",
-            		Glass:"Pint",
-            		glassImg:"/images/pint-dk.png",
-	        	Temperature:"50-55°F"
+            Glass:"Pint",
+            glassImg:"/images/pint-dk.png",
+	        Temperature:"50-55°F"
 		},
 		{ //9
 			Name:"VooDoo Vator",
 			Brewery:"Atwater Brewery",
 			Logo: "images/atwater.png",
-	        	Type:"Doppelbock",
+	        Type:"Doppelbock",
 			Description:"This exceptionally smooth caramel malt carries a crisp nutty flavor, along with a high dose of liquid courage.",
-	        	Flavor:"camembert, roast, nut",
-            		Glass:"Pilsener",
-            		glassImg:"/images/pilsner-dk.png",
-	        	Temperature:"45-50°F"
+	        Flavor:"camembert, roast, nut",
+            Glass:"Pilsener",
+            glassImg:"/images/pilsner-dk.png",
+	        Temperature:"45-50°F"
 		}
 	]; // end of Atwater array
 
@@ -175,7 +175,7 @@ angular.module('beerApp')
 			Description:"Low End Theory’s bigger brother.",
             Flavor:"sharp, curry, pepperoni",
             Glass:"Becker",
-            glassImg:"/images/bekcer-dk.png",
+            glassImg:"/images/becker-dk.png",
             Temperature:"40-45°F"
 		},
 		{ //5
