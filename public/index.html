@@ -3,15 +3,16 @@
 <head>
 	<!-- Stylesheet compiled with Stylus -->
 	<link rel="stylesheet" href="styles/beer.css">
+	<!-- meta data -->
 	<meta charset="UTF-8">
 	<meta name="keywords" content="beer, craft, food, recipes, pairing">
 	<meta name="description" content="Craft beer is special. The food you eat with it should be special, too.">
 	<meta name="author" content="Mike Sandula, Aleah Ellis, Aubrie Glennon, KJ Schmidt">
+	<!-- title name, logo -->
 	<link rel="shortcut icon" href="images/logo.png" type="image/png"/>
 	<title>Crafted: Beer Meets Food</title>
 </head>
 <body ng-app="beerApp">
-
 	
 	<!-- for the fb share button -->
 	<div id="fb-root"></div>
@@ -131,7 +132,7 @@
 	<footer id="footerPosition"> 
 		<a href="#" onclick="contact_open();">Contact</a> |
 		<div id="contactFade" onClick="contact_close();"></div>
-		<a href="#" onclick="about_open();">About The App</a>
+		<a href="#" onclick="about_open();">About the app</a>
 		<div id="aboutFade" onClick="about_close();"></div>
 		<p> &#169; 2016 MAAK productions</p>
   	</footer>
@@ -148,7 +149,6 @@
 			<a href="mailto:msandula@gmail.com"><img class="icons"src="images/email.png" /></a>
 			<a target="blank" href="https://github.com/msandula12"><img class="icons"src="images/github.png" /></a>
 			<a target="blank" href="https://www.linkedin.com/in/mikesandula"><img class="icons"src="images/linkedin.png" /></a>
-		<!--	<a target="blank" href="https://twitter.com/msandula"><img class="icons"src="images/twitter.png" /></a>-->
 		</div>
 		
 		<div class="contactMAAK" id="odd">
@@ -159,7 +159,6 @@
 			<a href="mailto:info@aubrieglennon.com"><img class="icons"src="images/email.png" /></a>
 			<a target="blank" href="https://github.com/aubrieann"><img class="icons"src="images/github.png" /></a>
 			<a target="blank" href="https://www.linkedin.com/in/aubrieglennon"><img class="icons"src="images/linkedin.png" /></a>
-		<!--	<a target="blank" href="twitter"><img class="icons"src="images/twitter.png" /></a>-->
 		</div>
 
 		<div class="contactMAAK" id="even">
@@ -170,7 +169,6 @@
 			<a href="mailto:aleah.is@icloud.com"><img class="icons"src="images/email.png" /></a>
 			<a target="blank" href="https://github.com/AleahEllis"><img class="icons"src="images/github.png" /></a>
 			<a target="blank" href="https://www.linkedin.com/in/aleahellis"><img class="icons"src="images/linkedin.png" /></a>
-		<!--	<a target="blank" href="https://twitter.com/EllisFord3"><img class="icons"src="images/twitter.png" /></a>-->
 		</div>
 
 		<div class="contactMAAK" id="odd">
@@ -181,17 +179,19 @@
 			<a href="mailto:kj.schmidt913@gmail.com"><img class="icons"src="images/email.png" /></a>
 			<a target="blank" href="http://www.github.com/kjschmidt913"><img class="icons"src="images/github.png" /></a>
 			<a target="blank" href="http://www.linkedin.com/in/schmidtkj"><img class="icons"src="images/linkedin.png" /></a>
-		<!--	<a target="blank" href="http://www.twitter.com/kj_schmidt"><img class="icons"src="images/twitter.png" /></a>-->
 		</div>
+
 	</div>
 			 
 	<!-- About the App lightbox -->	
 	<div class="footer" id="about">
 		<h3>Crafted: Beer Meets Food</h3>
 		<p>
-		Crafted is a city-specific desktop and mobile-friendly application. Interest in craft beer has exploded in recent years and, as a result, specialty, small-scale breweries have popped up in many major cities. Crafted allows you to choose a local brew from your favorite local breweries and pair that choice with carefully selected recipes. The recipes are based on each beer's unique flavor profile. Lots of apps offer food pairings for general beer types (such as porters and IPAs), but only Crafted offers unique pairing combinations.
+		Crafted is a city-specific desktop and mobile-friendly application. Interest in craft beer has exploded in recent years and, as a result, specialty, small-scale breweries have popped up in many major cities. Crafted allows you to choose a local brew from your favorite local breweries and pair that choice with carefully selected recipes. The recipes are based on each beer's unique flavor profile. 
 		</p>
-		<br />
+		<p>
+		Lots of apps offer food pairings for general beer types (such as porters and IPAs), but only Crafted offers pairing combinations unique to the beer you're drinking.
+		</p>
 		<p>
 		The app is currently specific to downtown Detroit's thriving local breweries, but has plans to extend to other major cities throughout the U.S.
 		</p>			
@@ -209,10 +209,10 @@
 		</div>
 	</div>
 	
-	<!-- Angular libraries -->
+	<!-- Angular library -->
 	<script src="libs/angular.min.js"></script>
 	
-	<!-- project JavaScript files -->
+	<!-- Local JavaScript files -->
 	<script src="app.js"></script>
 
 </body>
