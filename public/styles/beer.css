@@ -54,6 +54,7 @@ h1 {
   padding: 20px;
   border-radius: 5px;
   display: none;
+  position: relative;
 }
 /* beer info view */
 #beerInfo p {
@@ -106,17 +107,40 @@ h3 {
   width: 30%;
   float: left;
 }
-.twitter-share-button {
-  display: block;
-  padding-top: 2%;
+#socialButtonsPhone {
+  display: none;
 }
 #socialButtonsDesktop {
   position: absolute;
-  left: 80%;
-  width: 20%;
+  right: 20px;
+  top: 0px;
 }
-#socialButtonsPhone {
-  display: none;
+#socialButtonsDesktop a {
+  text-decoration: none;
+}
+#twitterButton,
+#fbButton {
+  background-color: #366e80;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  font-size: 16px;
+  display: block;
+  margin: 10px auto;
+  text-align: left;
+  text-indent: 10px;
+}
+#twitterButton:hover,
+#fbButton:hover {
+  background-color: #214550;
+  cursor: pointer;
+}
+#twitterLogo,
+#fbLogo {
+  width: 20px;
+  float: left;
 }
 /* footer */
 footer {
@@ -215,7 +239,10 @@ footer a:hover {
   background-color: #e5edef;
   z-index: 1002;
   overflow: visible;
-  bottom: 25%;
+}
+#about p {
+  display: block;
+  padding-bottom: 10px;
 }
 #about h3 {
   text-align: center;
@@ -318,6 +345,10 @@ footer a:hover {
 }
 /* media query for smartphones */
 @media only screen and (max-device-width: 480px) {
+  p {
+    font-size: 25px;
+    line-height: 60px;
+  }
   .container {
     width: 90%;
   }
@@ -376,9 +407,9 @@ footer a:hover {
   #about {
     width: 80%;
     left: 7%;
-    top: 10%;
+    top: 5%;
     padding: 40px;
-    height: 70%;
+    height: 85%;
   }
   #about p {
     font-size: 40px;
@@ -399,11 +430,6 @@ footer a:hover {
   #beerInfo h3 {
     font-size: 3em;
   }
-  #beerInfo p,
-  #beerInfo li {
-    font-size: 40px;
-    line-height: 60px;
-  }
   .breweryLogo {
     width: 350px;
     float: right;
@@ -418,16 +444,15 @@ footer a:hover {
     width: 100%;
     display: block;
     border: none;
-  }
-  .views {
-    height: 100vh;
+    margin-bottom: 60px;
   }
   #socialButtonsDesktop {
     display: none;
   }
   #socialButtonsPhone {
-    width: 300px;
+    width: 100%;
     display: block;
+    margin-bottom: 40px;
   }
   #socialButtonsPhone a {
     text-decoration: none;
@@ -435,16 +460,19 @@ footer a:hover {
   #twitterButton,
   #fbButton {
     background-color: #366e80;
-    width: 450px;
+    width: 480px;
     border: none;
     border-radius: 5px;
     color: #fff;
     padding: 10px;
     font-size: 40px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    text-align: left;
+    text-indent: 30px;
   }
-  #twitterLogo {
+  #twitterLogo,
+  #fbLogo {
     width: 50px;
     float: left;
   }

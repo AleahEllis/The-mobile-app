@@ -62,10 +62,20 @@
 			    <div class="generalInfo">
 
 			    	<div id="socialButtonsDesktop">
-				    	<div class="fb-share-button" data-href="https://beermeetsfood.us" data-layout="button"></div>
-
-				    	
-				    	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!">Tweet</a>
+				    	<!-- Share on Facebook button -->
+				    	<a href="http://www.facebook.com/share.php?u=https://beermeetsfood.us&title=Crafted: Beer Meets Food" data-href="https://beermeetsfood.us" data-layout="button">
+				    		<button id="fbButton">
+				    		<img src="images/facebook.png" alt="" id="fbLogo">
+				    		Share on Facebook
+				    		</button>
+				    	</a>	
+				    	<!-- Share on Twitter button -->
+				    	<a href="http://twitter.com/intent/tweet?status=I just tried a new beer pairing via Crafted!+https://beermeetsfood.us">
+				    		<button id="twitterButton">
+				    		<img src="images/twitter.png" alt="" id="twitterLogo">
+				    		Share on Twitter
+				    		</button>
+				    	</a>
 				    </div>
 			    
 			    	<h3>About your beer</h3>
@@ -94,30 +104,16 @@
 			    	<p><span>Temperature:</span><br /> {{beer.Temperature}}</p>
 		    	</div>
 
-			</div> <!-- end of pairingController -->
-
-		</div> <!-- end of mainController -->
-
-
-
 		    	<div id="socialButtonsPhone">
-			    	
-			    	<a href="">
+			    	<!-- Share on Facebook button -->
+			    	<a href="http://www.facebook.com/share.php?u=https://beermeetsfood.us&title=Crafted: Beer Meets Food" data-href="https://beermeetsfood.us" data-layout="button">
 			    		<button id="fbButton">
-			    		<img src="" alt="" id="fbLogo">
+			    		<img src="images/facebook.png" alt="" id="fbLogo">
 			    		Share on Facebook
 			    		</button>
 			    	</a>	
-
-
-
-			    	<div class="fb-share-button" data-href="https://beermeetsfood.us" data-layout="button"></div>
-			    	
-			    	<!--
-			    	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!" data-size="large">Tweet</a>
-			    -->
-					
-			    	<a href="https://twitter.com/share" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!">
+			    	<!-- Share on Twitter button -->
+			    	<a href="http://twitter.com/intent/tweet?status=I just tried a new beer pairing via Crafted!+https://beermeetsfood.us">
 			    		<button id="twitterButton">
 			    		<img src="images/twitter.png" alt="" id="twitterLogo">
 			    		Share on Twitter
@@ -125,6 +121,9 @@
 			    	</a>
 			    </div>
 
+			</div> <!-- end of pairingController -->
+
+		</div> <!-- end of mainController -->
 
 	</div> <!-- end of container -->
 
@@ -212,12 +211,9 @@
 	
 	<!-- Angular libraries -->
 	<script src="libs/angular.min.js"></script>
-	<script src="libs/angular-route.min.js"></script>
 	
 	<!-- project JavaScript files -->
 	<script src="app.js"></script>
-	<!-- google sign in library -->
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 </html>
