@@ -61,15 +61,13 @@
 			    
 			    <div class="generalInfo">
 
-			    	<div id="socialButtons">
+			    	<div id="socialButtonsDesktop">
 				    	<div class="fb-share-button" data-href="https://beermeetsfood.us" data-layout="button"></div>
 
 				    	
 				    	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!">Tweet</a>
-				    	
 				    </div>
-			    	
-
+			    
 			    	<h3>About your beer</h3>
 
 			    	<img src="{{beer.Logo}}" alt="" class="breweryLogo">
@@ -96,10 +94,37 @@
 			    	<p><span>Temperature:</span><br /> {{beer.Temperature}}</p>
 		    	</div>
 
-
 			</div> <!-- end of pairingController -->
 
 		</div> <!-- end of mainController -->
+
+
+
+		    	<div id="socialButtonsPhone">
+			    	
+			    	<a href="">
+			    		<button id="fbButton">
+			    		<img src="" alt="" id="fbLogo">
+			    		Share on Facebook
+			    		</button>
+			    	</a>	
+
+
+
+			    	<div class="fb-share-button" data-href="https://beermeetsfood.us" data-layout="button"></div>
+			    	
+			    	<!--
+			    	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!" data-size="large">Tweet</a>
+			    -->
+					
+			    	<a href="https://twitter.com/share" data-url="http://beermeetsfood.us" data-text="I just tried a new beer pairing via Crafted!">
+			    		<button id="twitterButton">
+			    		<img src="images/twitter.png" alt="" id="twitterLogo">
+			    		Share on Twitter
+			    		</button>
+			    	</a>
+			    </div>
+
 
 	</div> <!-- end of container -->
 
