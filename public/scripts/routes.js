@@ -38,7 +38,6 @@ function about_close(){
     document.getElementById('aboutFade').style.display='none';
 };
 
-
 // modal 
 var modal = document.getElementById('myModal');
 var yes = document.getElementById("yes");
@@ -49,6 +48,7 @@ yes.onclick = function() {
 }
 
 no.onclick = function() {
+    alert("Sorry! Since this app is heavily focused on beer, we'd rather you were legal drinking age. Come back when you're 21.");
     history.go(-1);
     return false;
 }
